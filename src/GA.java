@@ -10,12 +10,15 @@ public class GA {
 	ArrayList<Chromasome> rouletteTable = new ArrayList<Chromasome>(100);
 	Random rand = new Random();
 	Chromasome currentBest;
+	int checkCount = 0;
+	int currentCheck = 0;
+	
 	/**
 	 * Function to generate the initial population
 	 */
 	public void initialPop(){
 		for(int i = 0; i < populationSize; i++){
-			Chromasome chro = new Chromasome(i);
+			Chromasome chro = new Chromasome(Constants.dataSize);
 			chro.generate();
 			population.add(chro);
 		}
@@ -24,6 +27,8 @@ public class GA {
 	public void runGA(){
 		boolean terminate = false;
 		initialPop(); // Initialize population
+		findBest();
+		currentCheck = currentBest.fitness;
 		//begin GA loop
 		do{
 			parentRoulette();//Generate the parent pool for this generation
@@ -37,7 +42,15 @@ public class GA {
 			}
 			population = children;
 			population.set(0, currentBest);//We dump the first child for our current best, to provide elitism
-			
+			int lastBestFitness = currentBest.fitness;
+			findBest();
+			checkCount++;
+			if(checkCount >= Constants.generationsToCheck){
+				double improvement = currentBest.fitness/currentCheck;
+				if(improvement < .05){
+					terminate = true;
+				}
+			}
 		}while(!terminate);
 	}
 
@@ -58,5 +71,13 @@ public class GA {
 	private void parentRoulette() {
 		// TODO Auto-generated method stub
 		int currentIndex = 0;
+	}
+	
+	/**
+	 * Method to simply find the most fit chromasome
+	 */
+	private void findBest() {
+		// TODO Auto-generated method stub
+		
 	}
 }

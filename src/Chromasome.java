@@ -22,4 +22,22 @@ public class Chromasome {
 			else chromasome[i] = 0; //Dont put the item in the bag
 		}
 	}
+	public int[] returnChrom(){
+		return this.chromasome;
+	}
+	public void setChrom(int[] chrom){
+		this.chromasome = chrom;
+	}
+	
+	/**
+	 * Method that both computes and returns a chromasome's fitness
+	 * Fitness formula: Total item value - (penalty modifier)*(Amount over capacity)
+	 * @return
+	 */
+	public int getFitness(){
+		for(int i = 0; i < chromasome.length; i++){
+			
+		}
+		return 0;
+	}
 }
