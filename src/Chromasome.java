@@ -35,9 +35,21 @@ public class Chromasome {
 	 * @return
 	 */
 	public int getFitness(){
+		int totalValue = 0;
+		int totalSize = 0;
 		for(int i = 0; i < chromasome.length; i++){
-			
+			if(chromasome[i] == 1){
+				totalValue += Constants.items.get(i).value;
+				totalSize += Constants.items.get(i).size;
+			}
 		}
-		return 0;
+		int sizeOver = 0;
+		if(totalSize > Constants.sizeConstraint) sizeOver = totalSize - Constants.sizeConstraint;
+		this.fitness = (int) (totalValue - (Constants.penaltyModifier * sizeOver));
+		return this.fitness;
+	}
+	public void mutate() {
+		// TODO Auto-generated method stub
+		
 	}
 }

@@ -8,6 +8,6 @@ public class Constants {
 	public static double mutationChance = .05;//Chance for mutation each time a child is produced
 	public static int dataSize = 0;
 	public static double penaltyModifier = 1; 
-	public static int sizeConstrant = 0;
+	public static int sizeConstraint = 0;
 	public static ArrayList<Item> items = new ArrayList<Item>();
 }

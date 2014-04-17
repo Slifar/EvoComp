@@ -61,8 +61,19 @@ public class GA {
 	 * @param parent2 - The secondary parent, whos second half will be used
 	 */
 	private Chromasome genChild(Chromasome parent1, Chromasome parent2) {
-		// TODO Auto-generated method stub
-		return null;
+		int[] par1 = parent1.returnChrom();
+		int[] par2 = parent2.returnChrom();
+		Chromasome child = new Chromasome(par1.length);
+		int index = 0;
+		while(index < par1.length/2){
+			child.chromasome[index] = par1[index];
+			index++;
+		}
+		while(index < par1.length){
+			child.chromasome[index] = par2[index];
+		}
+		if(rand.nextDouble() < Constants.mutationChance) child.mutate();
+		return child;
 	}
 
 	/**
@@ -77,7 +88,11 @@ public class GA {
 	 * Method to simply find the most fit chromasome
 	 */
 	private void findBest() {
-		// TODO Auto-generated method stub
+		for(Chromasome c : population){
+			if(c.getFitness() > currentBest.getFitness()){
+				currentBest = c;
+			}
+		}
 		
 	}
 }
