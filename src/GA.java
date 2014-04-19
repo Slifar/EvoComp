@@ -12,6 +12,7 @@ public class GA {
 	Chromasome currentBest;
 	int checkCount = 0;
 	int currentCheck = 0;
+	int generationCount = 0;
 	
 	/**
 	 * Function to generate the initial population
@@ -40,16 +41,19 @@ public class GA {
 				children.add(genChild(parent1, parent2));//Generate one of the children
 				children.add(genChild(parent2, parent1));//Generate the other child
 			}
-			population = children;
+			population = new ArrayList<Chromasome>(children);
+			children.clear();
 			population.set(0, currentBest);//We dump the first child for our current best, to provide elitism
-			int lastBestFitness = currentBest.fitness;
+			//int lastBestFitness = currentBest.fitness;
 			findBest();
 			checkCount++;
+			generationCount++;
 			if(checkCount >= Constants.generationsToCheck){
-				double improvement = currentBest.fitness/currentCheck;
-				if(improvement < .05){
+				double improvement = (double)(currentBest.fitness-currentCheck)/(double)(currentCheck);
+				if(improvement < .05 && currentBest.isFeasible()){
 					terminate = true;
 				}
+				currentCheck = currentBest.getFitness();
 			}
 		}while(!terminate);
 	}
@@ -71,6 +75,7 @@ public class GA {
 		}
 		while(index < par1.length){
 			child.chromasome[index] = par2[index];
+			index++;
 		}
 		if(rand.nextDouble() < Constants.mutationChance) child.mutate();
 		return child;
@@ -81,13 +86,27 @@ public class GA {
 	 */
 	private void parentRoulette() {
 		// TODO Auto-generated method stub
-		int currentIndex = 0;
+		int totalFitness = 0;
+		for(Chromasome chro : population){
+			totalFitness += chro.getFitness();
+		}
+		for(Chromasome chro : population){
+			int numSlots = (int)((double)(chro.fitness)/(double)(totalFitness) * 100);
+			for(int i = 0; i < numSlots; i++){
+				rouletteTable.add(chro);
+			}
+		}
+		while(parents.size() < 100){
+			parents.add(rouletteTable.get(rand.nextInt(rouletteTable.size())));
+		}
+		
 	}
 	
 	/**
 	 * Method to simply find the most fit chromasome
 	 */
 	private void findBest() {
+		if(currentBest == null) currentBest = population.get(0);
 		for(Chromasome c : population){
 			if(c.getFitness() > currentBest.getFitness()){
 				currentBest = c;

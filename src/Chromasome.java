@@ -5,6 +5,7 @@ public class Chromasome {
 	int[] chromasome;
 	int numItems = 0;
 	int fitness = 0;
+	boolean isFeasible = true;
 	Random rand = new Random();
 	
 	public Chromasome(int length){
@@ -44,12 +45,18 @@ public class Chromasome {
 			}
 		}
 		int sizeOver = 0;
-		if(totalSize > Constants.sizeConstraint) sizeOver = totalSize - Constants.sizeConstraint;
+		if(totalSize > Constants.sizeConstraint){
+			sizeOver = totalSize - Constants.sizeConstraint;
+			isFeasible = false;
+		}
 		this.fitness = (int) (totalValue - (Constants.penaltyModifier * sizeOver));
 		return this.fitness;
 	}
 	public void mutate() {
 		// TODO Auto-generated method stub
 		
+	}
+	public boolean isFeasible(){
+		return this.isFeasible;
 	}
 }
