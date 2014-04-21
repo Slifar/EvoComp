@@ -1,14 +1,23 @@
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.Scanner;
 
 
 public class main {
-
+	public static PrintWriter out; 
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
+		try {
+			out = new PrintWriter(new FileWriter(Constants.outputFile));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} 
 		setupDataSet();
 		GA ga = new GA();
 		ga.runGA();

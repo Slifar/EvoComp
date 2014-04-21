@@ -9,6 +9,7 @@ public class Chromasome {
 	Random rand = new Random();
 	
 	public Chromasome(int length){
+		chromasome = null;
 		chromasome = new int[length];
 		numItems = length;
 	}
@@ -49,14 +50,42 @@ public class Chromasome {
 			sizeOver = totalSize - Constants.sizeConstraint;
 			isFeasible = false;
 		}
-		this.fitness = (int) (totalValue - (Constants.penaltyModifier * sizeOver));
+		if(!this.isFeasible && GA.currentBest != null && GA.currentBest.isFeasible){
+			this.fitness = (int) (GA.currentBest.getFitness() - (sizeOver * Constants.penaltyModifier));
+		}
+		else if(!this.isFeasible && GA.currentFeasibleBest != null){
+			this.fitness = (int) (GA.currentFeasibleBest.getFitness() - (sizeOver * Constants.penaltyModifier));
+		}
+		else this.fitness = (int) (totalValue - (Constants.penaltyModifier * sizeOver));
 		return this.fitness;
 	}
 	public void mutate() {
-		// TODO Auto-generated method stub
-		
+		int toChange = rand.nextInt(chromasome.length);
+		if (Constants.secondMutation = false) {
+			if (chromasome[toChange] == 1)
+				chromasome[toChange] = 0;
+			else
+				chromasome[toChange] = 1;
+			toChange = rand.nextInt(chromasome.length);
+			if (chromasome[toChange] == 1)
+				chromasome[toChange] = 0;
+			else
+				chromasome[toChange] = 1;
+			toChange = rand.nextInt(chromasome.length);
+			if (chromasome[toChange] == 1)
+				chromasome[toChange] = 0;
+			else
+				chromasome[toChange] = 1;
+		}
 	}
 	public boolean isFeasible(){
 		return this.isFeasible;
+	}
+	public String getChromString(){
+		String toReturn = "";
+		for(int i = 0; i < chromasome.length; i++){
+			toReturn += chromasome[i];
+		}
+		return toReturn;
 	}
 }

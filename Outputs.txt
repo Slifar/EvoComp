@@ -1,0 +1,6 @@
+GA finished.
+ It took 100 generations, 503 mutations, and the best chromasome was:
+100101001111010110000001 with a fitness of 13355962
+ The crossover used was Single-point crossover
+ The mutation used was Triple Random Change
+ The parent selection used was Roulette
