@@ -5,6 +5,7 @@ public class Chromasome {
 	int[] chromasome;
 	int numItems = 0;
 	int fitness = 0;
+	int itemSize = 0;
 	boolean isFeasible = true;
 	Random rand = new Random();
 	
@@ -12,6 +13,11 @@ public class Chromasome {
 		chromasome = null;
 		chromasome = new int[length];
 		numItems = length;
+	}
+	public Chromasome(){
+		chromasome = null;
+		chromasome = new int[Constants.items.size()];
+		numItems = chromasome.length;
 	}
 	/**
 	 * Method to randomly initialize the chromasome to a random state..
@@ -23,6 +29,20 @@ public class Chromasome {
 			}
 			else chromasome[i] = 0; //Dont put the item in the bag
 		}
+		getFitness();
+		//if(!this.isFeasible())generate(); //It is easier if we simply start off with all feasible chromasomes
+	}
+	public void generateFeasible(){
+		for(int i = 0; i < numItems; i++){//For each item in existance
+			int randomPick = rand.nextInt(chromasome.length);
+			chromasome[randomPick] = 1;
+			getFitness();
+			if(!isFeasible){
+				chromasome[randomPick] = 0;
+				getFitness();
+			}
+		}
+		getFitness();
 	}
 	public int[] returnChrom(){
 		return this.chromasome;
@@ -45,11 +65,13 @@ public class Chromasome {
 				totalSize += Constants.items.get(i).size;
 			}
 		}
+		this.itemSize = totalSize;
 		int sizeOver = 0;
 		if(totalSize > Constants.sizeConstraint){
 			sizeOver = totalSize - Constants.sizeConstraint;
 			isFeasible = false;
 		}
+		else isFeasible = true;
 		if(!this.isFeasible && GA.currentBest != null && GA.currentBest.isFeasible){
 			this.fitness = (int) (GA.currentBest.getFitness() - (sizeOver * Constants.penaltyModifier));
 		}
@@ -60,22 +82,43 @@ public class Chromasome {
 		return this.fitness;
 	}
 	public void mutate() {
-		int toChange = rand.nextInt(chromasome.length);
-		if (Constants.secondMutation = false) {
+		int toChange;// = rand.nextInt(chromasome.length);
+		if (Constants.secondMutation == false) {
+			for(int i = 0; i < (Constants.items.size()/4) - 1; i++){
+				toChange = rand.nextInt(chromasome.length);
+				if (chromasome[toChange] == 1)
+					chromasome[toChange] = 0;
+				else
+					chromasome[toChange] = 1;
+			}
+			/*if (chromasome[toChange] == 1)
+				chromasome[toChange] = 0;
+			else
+				chromasome[toChange] = 1;*/
+			/*toChange = rand.nextInt(chromasome.length);
 			if (chromasome[toChange] == 1)
 				chromasome[toChange] = 0;
 			else
-				chromasome[toChange] = 1;
+				chromasome[toChange] = 1;*/
 			toChange = rand.nextInt(chromasome.length);
 			if (chromasome[toChange] == 1)
 				chromasome[toChange] = 0;
 			else
 				chromasome[toChange] = 1;
-			toChange = rand.nextInt(chromasome.length);
-			if (chromasome[toChange] == 1)
-				chromasome[toChange] = 0;
-			else
-				chromasome[toChange] = 1;
+		}
+		else{
+			int firstIndex = rand.nextInt(chromasome.length);
+			int secondIndex = rand.nextInt(chromasome.length);
+			while(firstIndex == secondIndex) secondIndex = rand.nextInt(chromasome.length);
+			int atFirst = chromasome[firstIndex];
+			chromasome[firstIndex] = chromasome[secondIndex];
+			chromasome[secondIndex] = atFirst;
+			/*firstIndex = rand.nextInt(chromasome.length);
+			secondIndex = rand.nextInt(chromasome.length);
+			while(firstIndex == secondIndex) secondIndex = rand.nextInt(chromasome.length);
+			atFirst = chromasome[firstIndex];
+			chromasome[firstIndex] = chromasome[secondIndex];
+			chromasome[secondIndex] = atFirst;*/
 		}
 	}
 	public boolean isFeasible(){

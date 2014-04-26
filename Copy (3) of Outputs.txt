@@ -1,0 +1,108 @@
+GA finished.
+ The crossover used was Uniform crossover
+ The mutation used was Random Bit Change
+ The parent selection used was Roulette
+ The population size was: 1000
+ The minimum number of generations to run was: 200
+ It took 837 generations, 41928 mutations, and the best chromasome was:
+ 1100010000110000110111110001001111010010110110000011010000001100100000010101000010101000001011010100
+ with a fitness of 2718
+ The runtime was: 416.73861042 seconds
+ The final standard deviation of the population was: 70.66823897621902
+ The final Mu value for the population was :2522.0
+
+GA finished.
+ The crossover used was Uniform crossover
+ The mutation used was Random Bit Change
+ The parent selection used was Roulette
+ The population size was: 1000
+ The minimum number of generations to run was: 200
+ It took 1923 generations, 137960 mutations, and the best chromasome was:
+ 1110100000111011000010110001101110011000111100000011100000001010000000101111100011011001001011000000
+ with a fitness of 2801
+ The runtime was: 970.857968052 seconds
+ The final standard deviation of the population was: 79.27168473042566
+ The final Mu value for the population was :2619.0
+
+GA finished.
+ The crossover used was Single-Point Crossover
+ The mutation used was Random Bit Change
+ The parent selection used was Roulette
+ The population size was: 1000
+ The minimum number of generations to run was: 200
+ It took 1623 generations, 219542 mutations, and the best chromasome was:
+ 1000001000110110000011010110001111000001111011100010110010001001111000101100000011010000001111100000
+ with a fitness of 2827
+ The runtime was: 774.783313919 seconds
+ The final standard deviation of the population was: 82.71033792700887
+ The final Mu value for the population was :2675.0
+
+GA finished.
+ The crossover used was Single-Point Crossover
+ The mutation used was Random Bit Change
+ The parent selection used was Roulette
+ The population size was: 1000
+ The minimum number of generations to run was: 200
+ It took 1886 generations, 314016 mutations, and the best chromasome was:
+ 1101110010110110100011010000001100001000101100000011010100001111010001100001010011101000001111100000
+ with a fitness of 2837
+ The runtime was: 889.16416153 seconds
+ The final standard deviation of the population was: 76.34788798650555
+ The final Mu value for the population was :2690.0
+
+GA finished.
+ The crossover used was Uniform crossover
+ The mutation used was Bit swap
+ The parent selection used was Roulette
+ The population size was: 1000
+ The minimum number of generations to run was: 200
+ It took 1733 generations, 400831 mutations, and the best chromasome was:
+ 1111000000111101000011110000001111000000111101000010110000001111111000111100000011101010001111110000
+ with a fitness of 3021
+ The runtime was: 783.692051268 seconds
+ The final standard deviation of the population was: 54.35071296680477
+ The final Mu value for the population was :2936.0
+
+GA finished.
+ The crossover used was Uniform crossover
+ The mutation used was Bit swap
+ The parent selection used was Roulette
+ The population size was: 1000
+ The minimum number of generations to run was: 200
+ It took 1137 generations, 457870 mutations, and the best chromasome was:
+ 1111000000111101100011111000001111011000111110000011110000001111000000101000100011110110001000000100
+ with a fitness of 2962
+ The runtime was: 523.534573132 seconds
+ The final standard deviation of the population was: 57.42821606144492
+ The final Mu value for the population was :2872.0
+
+GA finished.
+ The crossover used was Single-Point Crossover
+ The mutation used was Bit swap
+ The parent selection used was Roulette
+ The population size was: 1000
+ The minimum number of generations to run was: 200
+ It took 201 generations, 467981 mutations, and the best chromasome was:
+ 1011100100110101000010010000001001010010110100000011101101101110000000110100100011001110001101000000
+ with a fitness of 2770
+ The runtime was: 80.397143458 seconds
+ The final standard deviation of the population was: 49.35585071701227
+ The final Mu value for the population was :2718.0
+
+GA finished.
+ The crossover used was Single-Point Crossover
+ The mutation used was Bit swap
+ The parent selection used was Roulette
+ The population size was: 1000
+ The minimum number of generations to run was: 200
+ It took 200 generations, 477978 mutations, and the best chromasome was:
+ 1000000000101000001010010010011111001100101110000011100110001000011000000101111011001100001001000000
+ with a fitness of 2576
+ The runtime was: 79.984402067 seconds
+ The final standard deviation of the population was: 37.04051835490427
+ The final Mu value for the population was :2522.0
+
+Simulated Annealing finished. 
+ 0001001000000100000001110100001001110001110010101000001000011000000000010110000110010000101010001110 with a fitness of 2225
+ Was foolish hillclimber: false
+ The runtime was: 0.715073249 seconds
