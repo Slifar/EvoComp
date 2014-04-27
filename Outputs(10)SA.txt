@@ -1,0 +1,125 @@
+Simulated Annealing finished. 
+ 1111010000
+ with a fitness of 309
+ Was foolish hillclimber: false
+ The mutation used was: random bit change
+ The runtime was: 3.232275224 seconds
+
+Simulated Annealing finished. 
+ 1011010000
+ with a fitness of 252
+ Was foolish hillclimber: false
+ The mutation used was: random bit change
+ The runtime was: 3.351980123 seconds
+
+Simulated Annealing finished. 
+ 1101001000
+ with a fitness of 284
+ Was foolish hillclimber: false
+ The mutation used was: random bit change
+ The runtime was: 3.10622402 seconds
+
+Simulated Annealing finished. 
+ 1111010000
+ with a fitness of 309
+ Was foolish hillclimber: false
+ The mutation used was: random bit change
+ The runtime was: 3.213332404 seconds
+
+Simulated Annealing finished. 
+ 1110100000
+ with a fitness of 258
+ Was foolish hillclimber: false
+ The mutation used was: random bit change
+ The runtime was: 3.470360627 seconds
+
+Simulated Annealing finished. 
+ 1001000010
+ with a fitness of 247
+ Was foolish hillclimber: true
+ The mutation used was: random bit change
+ The runtime was: 1.736304772 seconds
+
+Simulated Annealing finished. 
+ 1001000010
+ with a fitness of 247
+ Was foolish hillclimber: true
+ The mutation used was: random bit change
+ The runtime was: 1.792646731 seconds
+
+Simulated Annealing finished. 
+ 1001000010
+ with a fitness of 247
+ Was foolish hillclimber: true
+ The mutation used was: random bit change
+ The runtime was: 1.804692491 seconds
+
+Simulated Annealing finished. 
+ 1101001000
+ with a fitness of 284
+ Was foolish hillclimber: true
+ The mutation used was: random bit change
+ The runtime was: 1.904457186 seconds
+
+Simulated Annealing finished. 
+ 1001000010
+ with a fitness of 247
+ Was foolish hillclimber: true
+ The mutation used was: random bit change
+ The runtime was: 1.875928359 seconds
+
+Simulated Annealing finished. 
+ 1111010000
+ with a fitness of 309
+ Was foolish hillclimber: false
+ The mutation used was: bit swap
+ The runtime was: 3.445456457 seconds
+
+Simulated Annealing finished. 
+ 1111010000
+ with a fitness of 309
+ Was foolish hillclimber: false
+ The mutation used was: bit swap
+ The runtime was: 3.338927227 seconds
+
+Simulated Annealing finished. 
+ 1111010000
+ with a fitness of 309
+ Was foolish hillclimber: false
+ The mutation used was: bit swap
+ The runtime was: 3.299159841 seconds
+
+Simulated Annealing finished. 
+ 1111010000
+ with a fitness of 309
+ Was foolish hillclimber: false
+ The mutation used was: bit swap
+ The runtime was: 3.263452265 seconds
+
+Simulated Annealing finished. 
+ 1111010000
+ with a fitness of 309
+ Was foolish hillclimber: false
+ The mutation used was: bit swap
+ The runtime was: 3.289560638 seconds
+
+Simulated Annealing finished. 
+ 1111010000
+ with a fitness of 309
+ Was foolish hillclimber: true
+ The mutation used was: bit swap
+ The runtime was: 2.040189919 seconds
+
+Simulated Annealing finished. 
+ 1111010000
+ with a fitness of 309
+ Was foolish hillclimber: true
+ The mutation used was: bit swap
+ The runtime was: 2.079033069 seconds
+
+Simulated Annealing finished. 
+ 1111010000
+ with a fitness of 309
+ Was foolish hillclimber: true
+ The mutation used was: bit swap
+ The runtime was: 2.065100973 seconds

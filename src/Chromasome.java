@@ -84,7 +84,7 @@ public class Chromasome {
 	public void mutate() {
 		int toChange;// = rand.nextInt(chromasome.length);
 		if (Constants.secondMutation == false) {
-			for(int i = 0; i < (Constants.items.size()/4) - 1; i++){
+			/*for(int i = 0; i < (Constants.items.size()/4) - 1; i++){
 				toChange = rand.nextInt(chromasome.length);
 				if (chromasome[toChange] == 1)
 					chromasome[toChange] = 0;

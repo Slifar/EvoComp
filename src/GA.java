@@ -7,14 +7,15 @@ public class GA {
 	int populationSize = Constants.populationSize;
 	ArrayList<Chromasome> parents = new ArrayList<Chromasome>(populationSize);
 	ArrayList<Chromasome> children = new ArrayList<Chromasome>(populationSize);
-	ArrayList<Chromasome> rouletteTable = new ArrayList<Chromasome>(100);
+	ArrayList<Chromasome> rouletteTable = new ArrayList<Chromasome>(100);//Table used to hold chromasomes for Rank selection
+	int genFound = 0;
 	double mu = 0;
 	double Variance = 0;
 	double stdDeviation = 0;
 	Random rand = new Random();
-	static Chromasome currentFeasibleBest = null;
-	int generationsUnchanged = 0;
-	static Chromasome currentBest;
+	static Chromasome currentFeasibleBest = null;//The current feasible best solution. Generally not relevent, due to the fitness function
+	int generationsUnchanged = 0;//The number of generations we have gone without finding a better solution
+	static Chromasome currentBest;// The best solution we have currently found
 	int checkCount = 0;
 	int currentCheck = 0;
 	int generationCount = 0;
@@ -85,10 +86,11 @@ public class GA {
 					terminate = true;
 					long finalTime = System.nanoTime();
 					String crossoverUsed = "Uniform crossover";
-					String parentSelectionUsed = "Roulette";
+					String parentSelectionUsed = "Rank";
 					String mutationUsed = "Random Bit Change";
 					if(Constants.secondCrossover) crossoverUsed = "Single-Point Crossover";
 					if(Constants.secondMutation) mutationUsed = "Bit swap";
+					if(Constants.Roulette) parentSelectionUsed = "Roulette";
 					main.out.println("GA finished."
 							+ "\n The crossover used was " + crossoverUsed
 							+ "\n The mutation used was " + mutationUsed
@@ -96,6 +98,7 @@ public class GA {
 							+ "\n The population size was: " + population.size()
 							+ "\n The minimum number of generations to run was: " + Constants.generationsToCheck
 							+ "\n The stagnation value was " + Constants.stagnationValue
+							//+ "\n The solution was found on generation: " + genFound
 							+ "\n It took " + this.generationCount + " generations, " + Constants.mutations + " mutations, and the best chromasome was:\n"
 							+ " " + this.currentBest.getChromString() + "\n with a fitness of " + currentBest.fitness
 							+ "\n The runtime was: " + ((double)(finalTime - initialTime))/ (double)1000000000
@@ -245,17 +248,23 @@ public class GA {
 	 * Method to simply find the most fit chromasome
 	 */
 	private void findBest() {
-		if(currentBest == null) currentBest = population.get(0);
+		if(currentBest == null){
+			currentBest = population.get(0);
+			genFound = this.generationCount;
+		}
 		for(Chromasome c : population){
 			if(c.getFitness() > currentBest.getFitness()){
 				currentBest = c;
 				generationsUnchanged = -1;
+				genFound = this.generationCount;
 			}
 			if(currentFeasibleBest == null && c.isFeasible()){
 				currentFeasibleBest = c;
+				//genFound = this.generationCount;
 			}
 			else if(c.isFeasible() && c.getFitness() > currentFeasibleBest.getFitness()){
 				currentFeasibleBest = c;
+				//genFound = this.generationCount;
 			}
 		}
 		

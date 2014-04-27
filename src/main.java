@@ -21,90 +21,92 @@ public class main {
 			e.printStackTrace();
 		} 
 		setupDataSet();
-		/*Constants.generationsToCheck = 1;
-		Constants.stagnationValue = 20;
-		Constants.logDev = true;
-		GA ga = new GA();
-		ga.runGA();
-		out.println("");
-		Constants.logDev = false;
-		ga = new GA();
-		ga.runGA();
-		out.println("");
-		ga = new GA();
-		ga.runGA();
-		out.println("");
-		Constants.stagnationValue = 50;
-		ga = new GA();
-		ga.runGA();
-		out.println("");
-		ga = new GA();
-		ga.runGA();
-		out.println("");
-		ga = new GA();
-		ga.runGA();
-		out.println("");
-		Constants.stagnationValue = 100;
-		ga = new GA();
-		ga.runGA();
-		out.println("");
-		ga = new GA();
-		ga.runGA();
-		out.println("");
-		ga = new GA();
-		ga.runGA();
-		out.println("");
-		Constants.stagnationValue = 300;
-		ga = new GA();
-		ga.runGA();
-		out.println("");
-		ga = new GA();
-		ga.runGA();
-		out.println("");
-		ga = new GA();
-		ga.runGA();
-		out.println("");///
-		/*ga = new GA();
-		ga.runGA();
-		out.println("");
-		Constants.secondCrossover = true;
-		ga = new GA();
-		ga.runGA();
-		out.println("");
-		ga = new GA();
-		ga.runGA();
-		out.println("");
-		Constants.secondCrossover = false;
-		Constants.secondMutation = true;
-		ga = new GA();
-		ga.runGA();
-		out.println("");
-		ga = new GA();
-		ga.runGA();
-		out.println("");
-		Constants.secondCrossover = true;
-		ga = new GA();
-		ga.runGA();
-		out.println("");
-		ga = new GA();
-		ga.runGA();
-		out.println("");*/
-		SimulaedAnnealing SA;
-		Constants.secondMutation = true;
-		for(int i = 0; i < 5; i ++){
-		SA = new SimulaedAnnealing();
-		SA.SimulatedAnnealing();
-		out.println();
+		GA ga;
+		for(int i = 0; i < 5; i++){
+			ga = new GA();
+			ga.runGA();
+			out.println("");
 		}
-		Constants.foolish = true;
 		Constants.secondMutation = true;
-		//out.println();
+		for(int i = 0; i < 5; i++){
+			ga = new GA();
+			ga.runGA();
+			out.println("");
+		}
+		Constants.secondMutation = false;
+		Constants.secondCrossover = true;
+		for(int i = 0; i < 5; i++){
+			ga = new GA();
+			ga.runGA();
+			out.println("");
+		}
+		Constants.secondMutation = true;
+		for(int i = 0; i < 5; i++){
+			ga = new GA();
+			ga.runGA();
+			out.println("");
+		}
+		Constants.secondMutation = false;
+		Constants.secondCrossover = false;
+		Constants.Roulette = true;
+		for(int i = 0; i < 5; i++){
+			ga = new GA();
+			ga.runGA();
+			out.println("");
+		}
+		Constants.secondMutation = true;
+		for(int i = 0; i < 5; i++){
+			ga = new GA();
+			ga.runGA();
+			out.println("");
+		}
+		Constants.secondMutation = false;
+		Constants.secondCrossover = true;
+		for(int i = 0; i < 5; i++){
+			ga = new GA();
+			ga.runGA();
+			out.println("");
+		}
+		Constants.secondMutation = true;
+		for(int i = 0; i < 5; i++){
+			ga = new GA();
+			ga.runGA();
+			out.println("");
+		}
+		Constants.secondMutation = false;
+		Constants.secondCrossover = false;
+		Constants.Roulette = false;
+		System.out.println("Finished all GA's");
+		SimulaedAnnealing SA;
 		for(int i = 0; i < 5; i ++){
 			SA = new SimulaedAnnealing();
 			SA.SimulatedAnnealing();
-			System.out.println("Ding!");
+			System.out.println("SA Done!");
 			out.println();
 		}
+		Constants.foolish = true;
+		for(int i = 0; i < 5; i ++){
+			SA = new SimulaedAnnealing();
+			SA.SimulatedAnnealing();
+			System.out.println("SA Done!");
+			out.println();
+		}
+		Constants.secondMutation = true;
+		Constants.foolish = false;
+		for(int i = 0; i < 5; i ++){
+			SA = new SimulaedAnnealing();
+			SA.SimulatedAnnealing();
+			System.out.println("SA Done!");
+			out.println();
+		}
+		Constants.foolish = true;
+		for(int i = 0; i < 5; i ++){
+			SA = new SimulaedAnnealing();
+			SA.SimulatedAnnealing();
+			System.out.println("SA Done!");
+			out.println();
+		}
+		System.out.println("Ding!");
 	}
 
 	private static void setupDataSet() {
