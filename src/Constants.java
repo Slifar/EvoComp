@@ -14,6 +14,7 @@ public class Constants {
 	public static double penaltyModifier = .25; //The penalty modifier for the fitness function
 	public static int sizeConstraint = 6404180; //The knapsack's capacity
 	public static ArrayList<Item> items = new ArrayList<Item>();//The items
+	public static ArrayList<City> cities = new ArrayList<City>();//The cities
 	public static String dataSizes = "Sizes_test_24";//the file with the item sizes to read from
 	public static String dataValues = "Values_test_24";//The file with the values to read from
 	public static long mutations = 0; // The number of mutations that occur
