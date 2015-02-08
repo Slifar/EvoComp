@@ -30,11 +30,6 @@ public class GA {
 			chro.generate();
 			population.add(chro);
 		}
-		Chromasome feas = new Chromasome();
-		feas.generateFeasible();
-		if(!feas.isFeasible()) System.out.println("Something bad happened!");
-		currentBest = feas;
-		population.set(0, feas);
 	}
 	
 	public void runGA(){
@@ -44,6 +39,7 @@ public class GA {
 		boolean terminate = false;
 		initialTime = System.nanoTime();
 		initialPop(); // Initialize population
+		currentBest = population.get(0); //We have to set the current best to be a chromosome, otherwise we'll register a best fitness of 0!
 		findBest();
 		currentCheck = currentBest.fitness;
 		//begin GA loop
@@ -163,29 +159,27 @@ public class GA {
 		}
 		mu = totalFitness / populationSize;
 		long varHold = 0;
-		//long selection = (long)(rand.nextDouble() * totalFitness);
 		for(Chromasome chro : population){
-			//int numSlots = (int)((double)(chro.fitness)/(double)(totalFitness) * 100);
 			double num = (chro.getFitness() - mu);
 			varHold += (num * num);
-			/*for(int i = 0; i < numSlots; i++){
-				rouletteTable.add(chro);
-			}*/
 		}
 		Variance = varHold / populationSize;
 		stdDeviation = Math.sqrt(Variance);
+		double invertedFitness = 0;
+		for(Chromasome chro : population){
+			invertedFitness += 1/chro.getFitness();
+		}
 		while(parents.size() < populationSize){
-			long selection = (long)(rand.nextDouble() * totalFitness);
+			long selection = (long)(rand.nextDouble() * invertedFitness);
 			int index = 0;
 			while(selection >= 0){
 				Chromasome selected = population.get(index);
-				selection -= selected.getFitness();
+				selection -= 1/selected.getFitness();
 				if(selection<0){
 					parents.add(selected);
 				}
 				index++;
 			}
-			//parents.add(rouletteTable.get(rand.nextInt(rouletteTable.size())));
 		}
 		
 	}
@@ -252,7 +246,7 @@ public class GA {
 			genFound = this.generationCount;
 		}
 		for(Chromasome c : population){
-			if(c.getFitness() > currentBest.getFitness()){
+			if(c.getFitness() < currentBest.getFitness()){
 				currentBest = c;
 				generationsUnchanged = -1;
 				genFound = this.generationCount;
@@ -261,7 +255,7 @@ public class GA {
 				currentFeasibleBest = c;
 				//genFound = this.generationCount;
 			}
-			else if(c.isFeasible() && c.getFitness() > currentFeasibleBest.getFitness()){
+			else if(c.isFeasible() && c.getFitness() < currentFeasibleBest.getFitness()){
 				currentFeasibleBest = c;
 				//genFound = this.generationCount;
 			}

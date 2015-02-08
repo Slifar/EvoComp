@@ -58,32 +58,18 @@ public class Chromasome {
 	 * @return
 	 */
 	public double getFitness(){
+		this.fitness = 0;
 		for(int i = 0; i < chromasome.length - 1; i++){
 			double x = Constants.cities.get(chromasome[i + 1]).getxChoord() - Constants.cities.get(chromasome[i]).getxChoord();
 			double y = Constants.cities.get(chromasome[i+ 1]).getyChoord() - Constants.cities.get(chromasome[i]).getyChoord();
-			this.fitness = Math.sqrt((x * x) + (y * y));
+			this.fitness += Math.sqrt((x * x) + (y * y));
 		}
 		return this.fitness;
 	}
 	public void mutate() {
 		int toChange;// = rand.nextInt(chromasome.length);
 		if (Constants.secondMutation == false) {
-			/*for(int i = 0; i < (Constants.items.size()/4) - 1; i++){
-				toChange = rand.nextInt(chromasome.length);
-				if (chromasome[toChange] == 1)
-					chromasome[toChange] = 0;
-				else
-					chromasome[toChange] = 1;
-			}
-			/*if (chromasome[toChange] == 1)
-				chromasome[toChange] = 0;
-			else
-				chromasome[toChange] = 1;*/
-			/*toChange = rand.nextInt(chromasome.length);
-			if (chromasome[toChange] == 1)
-				chromasome[toChange] = 0;
-			else
-				chromasome[toChange] = 1;*/
+			
 			toChange = rand.nextInt(chromasome.length);
 			if (chromasome[toChange] == 1)
 				chromasome[toChange] = 0;
