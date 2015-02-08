@@ -1,10 +1,11 @@
+import java.util.ArrayList;
 import java.util.Random;
 
 
 public class Chromasome {
 	int[] chromasome;
 	int numItems = 0;
-	int fitness = 0;
+	double fitness = 0;
 	int itemSize = 0;
 	boolean isFeasible = true;
 	Random rand = new Random();
@@ -23,16 +24,16 @@ public class Chromasome {
 	 * Method to randomly initialize the chromasome to a random state..
 	 */
 	public void generate(){
-		for(int i = 0; i < numItems; i++){//For each item in existance
-			if(rand.nextBoolean()){ //If the next randomly produced boolean is true
-				chromasome[i]=1;//put the current item in the bag
-			}
-			else chromasome[i] = 0; //Dont put the item in the bag
+		ArrayList<City> holds = new ArrayList<City>();
+		for (int i = 0; i < Constants.cities.size(); i++)
+			holds.add(Constants.cities.get(i));
+		for(int i = 0; i < numItems; i++){
+			int toPick = rand.nextInt(holds.size());
+			chromasome[i] = toPick;
+			holds.remove(toPick);
 		}
-		getFitness();
-		//if(!this.isFeasible())generate(); //It is easier if we simply start off with all feasible chromasomes
 	}
-	public void generateFeasible(){
+	public void generateFeasible(){//This function should not be needed
 		for(int i = 0; i < numItems; i++){//For each item in existance
 			int randomPick = rand.nextInt(chromasome.length);
 			chromasome[randomPick] = 1;
@@ -56,29 +57,12 @@ public class Chromasome {
 	 * Fitness formula: Total item value - (penalty modifier)*(Amount over capacity)
 	 * @return
 	 */
-	public int getFitness(){
-		int totalValue = 0;
-		int totalSize = 0;
-		for(int i = 0; i < chromasome.length; i++){
-			if(chromasome[i] == 1){
-				totalValue += Constants.items.get(i).value;
-				totalSize += Constants.items.get(i).size;
-			}
+	public double getFitness(){
+		for(int i = 0; i < chromasome.length - 1; i++){
+			double x = Constants.cities.get(chromasome[i + 1]).getxChoord() - Constants.cities.get(chromasome[i]).getxChoord();
+			double y = Constants.cities.get(chromasome[i+ 1]).getyChoord() - Constants.cities.get(chromasome[i]).getyChoord();
+			this.fitness = Math.sqrt((x * x) + (y * y));
 		}
-		this.itemSize = totalSize;
-		int sizeOver = 0;
-		if(totalSize > Constants.sizeConstraint){
-			sizeOver = totalSize - Constants.sizeConstraint;
-			isFeasible = false;
-		}
-		else isFeasible = true;
-		if(!this.isFeasible && GA.currentBest != null && GA.currentBest.isFeasible){
-			this.fitness = (int) (GA.currentBest.getFitness() - (sizeOver * Constants.penaltyModifier));
-		}
-		else if(!this.isFeasible && GA.currentFeasibleBest != null){
-			this.fitness = (int) (GA.currentFeasibleBest.getFitness() - (sizeOver * Constants.penaltyModifier));
-		}
-		else this.fitness = (int) (totalValue - (Constants.penaltyModifier * sizeOver));
 		return this.fitness;
 	}
 	public void mutate() {

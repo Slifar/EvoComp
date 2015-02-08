@@ -17,7 +17,7 @@ public class GA {
 	int generationsUnchanged = 0;//The number of generations we have gone without finding a better solution
 	static Chromasome currentBest;// The best solution we have currently found
 	int checkCount = 0;
-	int currentCheck = 0;
+	double currentCheck = 0;
 	int generationCount = 0;
 	long initialTime = 0;
 	
@@ -80,8 +80,7 @@ public class GA {
 				main.devOut.flush();
 			}
 			if(checkCount >= Constants.generationsToCheck){
-				double improvement = (double)(currentBest.fitness-currentCheck)/(double)(currentCheck);
-				if(((stdDeviation/mu) < Constants.stopThreshold || generationsUnchanged > Constants.stagnationValue) && (currentBest.isFeasible() || currentFeasibleBest != null)){
+				if(true){
 					if(!currentBest.isFeasible) currentBest = currentFeasibleBest;
 					terminate = true;
 					long finalTime = System.nanoTime();

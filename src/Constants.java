@@ -7,7 +7,7 @@ public class Constants {
 	public static boolean secondMutation = false;//Flag to set if we use the second mutation operator or not
 	public static boolean foolish = false;//Flag to set if the SA is a foolish hillclimber or not
 	public static int populationSize = 1000;//The population size
-	public static int generationsToCheck = 200;//The minimum amount of generations to check. Irrelevent with the Stagnation Value above this point.
+	public static int generationsToCheck = 1000;//The minimum amount of generations to check. Irrelevent with the Stagnation Value above this point.
 	public static double stopThreshold = .01; //This variable determines the minimum improvement that must be found every so often for us to not terminate
 	public static double mutationChance = .05;//Chance for mutation each time a child is produced
 	public static int dataSize = 0;//How many items there are
