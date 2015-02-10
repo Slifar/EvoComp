@@ -31,19 +31,19 @@ public class main {
 	}
 
 	private static void setupDataSet() {
-		Scanner sizeScan = null;
-		Scanner valueScan = null;
+		Scanner cityScan = null;
 		try {
-			sizeScan = new Scanner(new File(Constants.dataSizes));
-			valueScan = new Scanner(new File(Constants.dataValues));
+			cityScan = new Scanner(new File(Constants.cityFile));
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		while(sizeScan.hasNext()){
-			Item item = new Item(sizeScan.nextInt(), valueScan.nextInt());
-			Constants.items.add(item);
-			Constants.dataSize++;
+		while(cityScan.hasNext()){
+			City city = new City();
+			city.setCityNum(cityScan.nextInt());
+			city.setxChoord(cityScan.nextDouble());
+			city.setyChoord(cityScan.nextDouble());
+			Constants.cities.add(city);
 		}
 		
 	}

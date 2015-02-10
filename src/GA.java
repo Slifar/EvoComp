@@ -26,7 +26,7 @@ public class GA {
 	 */
 	public void initialPop(){
 		for(int i = 0; i < populationSize; i++){
-			Chromasome chro = new Chromasome(Constants.dataSize);
+			Chromasome chro = new Chromasome();
 			chro.generate();
 			population.add(chro);
 		}
@@ -61,9 +61,6 @@ public class GA {
 			population = new ArrayList<Chromasome>(children);
 			children.clear();
 			population.set(0, currentBest);//We dump the first child for our current best, to provide elitism
-			if(currentFeasibleBest != null){
-				population.set(population.size()-1, currentFeasibleBest);//We need to keep the best feasible solution, too!
-			}
 			findBest();
 			checkCount++;
 			generationCount++;
@@ -77,7 +74,6 @@ public class GA {
 			}
 			if(checkCount >= Constants.generationsToCheck){
 				if(true){
-					if(!currentBest.isFeasible) currentBest = currentFeasibleBest;
 					terminate = true;
 					long finalTime = System.nanoTime();
 					String crossoverUsed = "Uniform crossover";
@@ -119,32 +115,34 @@ public class GA {
 	private Chromasome genChild(Chromasome parent1, Chromasome parent2) {
 		int[] par1 = parent1.returnChrom();
 		int[] par2 = parent2.returnChrom();
-		Chromasome child = new Chromasome(par1.length);
-		if (Constants.secondCrossover) {
-			int index = 0;
-			while (index < par1.length / 2) {
-				child.chromasome[index] = par1[index];
-				index++;
-			}
-			while (index < par1.length) {
-				child.chromasome[index] = par2[index];
-				index++;
-			}
-			
+		Chromasome child = new Chromasome();
+		int[] childChrom = new int[par1.length];
+		for(int i = 0; i < par1.length; i++){
+			childChrom[i] = par1[i];
 		}
-		else{
-			for(int i = 0; i < child.chromasome.length; i++){
-				if(rand.nextBoolean()){
-					child.chromasome[i] = par1[i];
+		int crossoverPoint1 = rand.nextInt(parent1.chromasome.length - 1) + 1;
+		int crossoverPoint2 = rand.nextInt(parent1.chromasome.length - 1) + 1;
+		if (crossoverPoint1 > crossoverPoint2) //if point 1 is bigger than point 2 swap them
+	    {
+	        int temp = crossoverPoint1;
+	        crossoverPoint1 = crossoverPoint2;
+	        crossoverPoint2 = temp;
+	    }
+		for(int i = crossoverPoint1; i <= crossoverPoint2; i++){
+			//Insert PMX swapping code here.
+			int toFind = par2[i];
+			int toReplace = childChrom[i];
+			for(int q = 0; q < childChrom.length; q++){
+			if(childChrom[q] == toFind){
+					childChrom[q] = toReplace;
+					break;
 				}
-				else child.chromasome[i] = par2[i];
-				
 			}
+			childChrom[i] = toFind;
 		}
-		if (rand.nextDouble() < Constants.mutationChance) {
-			child.mutate();
-			Constants.mutations++;
-		}
+		child.setChrom(childChrom);
+		double mutationRoll = rand.nextDouble();
+		if(mutationRoll <= Constants.mutationChance) child.mutate();
 		return child;
 	}
 
@@ -170,7 +168,7 @@ public class GA {
 			invertedFitness += 1/chro.getFitness();
 		}
 		while(parents.size() < populationSize){
-			long selection = (long)(rand.nextDouble() * invertedFitness);
+			double selection = (rand.nextDouble() * invertedFitness);
 			int index = 0;
 			while(selection >= 0){
 				Chromasome selected = population.get(index);
@@ -204,14 +202,9 @@ public class GA {
 		}
 		mu = totalFitness / populationSize;
 		long varHold = 0;
-		//long selection = (long)(rand.nextDouble() * totalFitness);
 		for(Chromasome chro : population){
-			//int numSlots = (int)((double)(chro.fitness)/(double)(totalFitness) * 100);
 			double num = (chro.getFitness() - mu);
 			varHold += (num * num);
-			/*for(int i = 0; i < numSlots; i++){
-				rouletteTable.add(chro);
-			}*/
 		}
 		int toAdd = 2;
 		long selectionRange = 1;
@@ -247,19 +240,24 @@ public class GA {
 		}
 		for(Chromasome c : population){
 			if(c.getFitness() < currentBest.getFitness()){
+				int i = 0;
 				currentBest = c;
 				generationsUnchanged = -1;
 				genFound = this.generationCount;
-			}
-			if(currentFeasibleBest == null && c.isFeasible()){
-				currentFeasibleBest = c;
-				//genFound = this.generationCount;
-			}
-			else if(c.isFeasible() && c.getFitness() < currentFeasibleBest.getFitness()){
-				currentFeasibleBest = c;
-				//genFound = this.generationCount;
+				//System.out.println("Current Best changed to: " + currentBest.fitness);
 			}
 		}
 		
 	}
+	
+	private double getChromDifferenceDistance(Chromasome a, Chromasome b){
+		double distance = 0;
+		for(int i = 0; i < Constants.cities.size(); i++){
+			double x = Constants.cities.get(a.chromasome[i]).getxChoord() - Constants.cities.get(b.chromasome[i]).getxChoord();
+			double y = Constants.cities.get(a.chromasome[i]).getyChoord() - Constants.cities.get(b.chromasome[i]).getyChoord();
+			distance += Math.sqrt((x * x) + (y * y));
+		}
+		return distance;
+	}
+	
 }
