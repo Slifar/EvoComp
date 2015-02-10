@@ -58,9 +58,9 @@ public class GA {
 				children.add(genChild(parent2, parent1));//Generate the other child
 			}
 			parents.clear();
-			population = new ArrayList<Chromasome>(children);
+			population = prunePopulation(children, population);//new ArrayList<Chromasome>(children);
 			children.clear();
-			population.set(0, currentBest);//We dump the first child for our current best, to provide elitism
+			//population.set(0, currentBest);//We dump the first child for our current best, to provide elitism
 			findBest();
 			checkCount++;
 			generationCount++;
@@ -83,13 +83,12 @@ public class GA {
 					if(Constants.secondMutation) mutationUsed = "Bit swap";
 					if(Constants.Roulette) parentSelectionUsed = "Roulette";
 					main.out.println("GA finished."
-							+ "\n The crossover used was " + crossoverUsed
+							/*+ "\n The crossover used was " + crossoverUsed
 							+ "\n The mutation used was " + mutationUsed
-							+ "\n The parent selection used was " + parentSelectionUsed
+							+ "\n The parent selection used was " + parentSelectionUsed*/
 							+ "\n The population size was: " + population.size()
-							+ "\n The minimum number of generations to run was: " + Constants.generationsToCheck
-							+ "\n The stagnation value was " + Constants.stagnationValue
-							//+ "\n The solution was found on generation: " + genFound
+							//+ "\n The minimum number of generations to run was: " + Constants.generationsToCheck
+							+ "\n The solution was found on generation: " + genFound
 							+ "\n It took " + this.generationCount + " generations, " + Constants.mutations + " mutations, and the best chromasome was:\n"
 							+ " " + this.currentBest.getChromString() + "\n with a fitness of " + currentBest.fitness
 							+ "\n The runtime was: " + ((double)(finalTime - initialTime))/ (double)1000000000
@@ -258,6 +257,57 @@ public class GA {
 			distance += Math.sqrt((x * x) + (y * y));
 		}
 		return distance;
+	}
+	
+	private Chromasome findMinMate(Chromasome father, ArrayList<Chromasome> parentpool){
+		Chromasome mother = null;
+		double currentDistance = 0;
+		double holdDistance = 0;
+		boolean first = true;
+		for(Chromasome c : parentpool){
+			if(c != father){
+				if(first){
+					mother = c;
+					first = false;
+					currentDistance = getChromDifferenceDistance(father, mother);
+				}
+				else{
+					holdDistance = getChromDifferenceDistance(father, c);
+					if(holdDistance < currentDistance){
+						mother = c;
+						currentDistance = holdDistance;
+					}
+				}
+			}
+		}
+		return mother;
+	}
+	
+	private ArrayList<Chromasome> prunePopulation(ArrayList<Chromasome> children, ArrayList<Chromasome> currentPop){
+		ArrayList<Chromasome> toReturn = new ArrayList<Chromasome>();
+		ArrayList<Chromasome> holding = new ArrayList<Chromasome>();
+		holding.addAll(children);
+		holding.addAll(currentPop);
+		ArrayList<Chromasome> toPrune = new ArrayList<Chromasome>();
+		for(Chromasome c : holding){
+			if(toPrune.size() < 1) toPrune.add(c);
+			else{
+				boolean inserted = false;
+				for(int i = 0; i < toPrune.size(); i++){
+					if(c.getFitness() < toPrune.get(i).getFitness()){
+						toPrune.add(i, c);
+						inserted = true;
+						break;
+					}
+				}
+				if(!inserted)toPrune.add(c);
+			}
+		}
+		for(int i = 0; i <= Constants.populationSize; i++){
+			toReturn.add(toPrune.get(i));
+		}
+		return toReturn;
+		
 	}
 	
 }
