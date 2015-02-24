@@ -5,7 +5,8 @@ import java.util.Random;
 public class GA {
 	ArrayList<Chromasome> population = new ArrayList<Chromasome>();
 	int populationSize = Constants.populationSize;
-	ArrayList<Chromasome> parents = new ArrayList<Chromasome>(populationSize);
+	ArrayList<Chromasome> maxParents = new ArrayList<Chromasome>(populationSize);
+	ArrayList<Chromasome> minParents = new ArrayList<Chromasome>(populationSize);
 	ArrayList<Chromasome> children = new ArrayList<Chromasome>(populationSize);
 	ArrayList<Chromasome> rouletteTable = new ArrayList<Chromasome>(100);//Table used to hold chromasomes for Rank selection
 	int genFound = 0;
@@ -51,13 +52,18 @@ public class GA {
 			//population.clear();
 			rouletteTable.clear();
 			for(int i = 0; i < populationSize/2; i++){
-				int select1 = rand.nextInt(parents.size());
-				Chromasome parent1 = parents.remove(select1);//Randomly select one parent
-				Chromasome parent2 = parents.remove(rand.nextInt(parents.size()));//Randomly select the other parent
+				int select1 = rand.nextInt(maxParents.size());
+				Chromasome parent1 = maxParents.remove(select1);//Randomly select one parent
+				minParents.remove(parent1);
+				Chromasome parent2 = findMaxMate(parent1, maxParents);//maxParents.remove(rand.nextInt(maxParents.size()));//Randomly select the other parent
+				//maxParents.remove(parent2);
 				children.add(genChild(parent1, parent2));//Generate one of the children
-				children.add(genChild(parent2, parent1));//Generate the other child
+				//children.add(genChild(parent2, parent1));//Generate the other child
+				parent2 = findMinMate(parent1, minParents);//maxParents.remove(rand.nextInt(maxParents.size()));//Randomly select the other parent
+				//minParents.remove(parent2);
+				children.add(genChild(parent1, parent2));
 			}
-			parents.clear();
+			maxParents.clear();
 			population = prunePopulation(children, population);//new ArrayList<Chromasome>(children);
 			children.clear();
 			//population.set(0, currentBest);//We dump the first child for our current best, to provide elitism
@@ -166,14 +172,15 @@ public class GA {
 		for(Chromasome chro : population){
 			invertedFitness += 1/chro.getFitness();
 		}
-		while(parents.size() < populationSize){
+		while(maxParents.size() < populationSize){
 			double selection = (rand.nextDouble() * invertedFitness);
 			int index = 0;
 			while(selection >= 0){
 				Chromasome selected = population.get(index);
 				selection -= 1/selected.getFitness();
 				if(selection<0){
-					parents.add(selected);
+					maxParents.add(selected);
+					minParents.add(selected);
 				}
 				index++;
 			}
@@ -188,11 +195,11 @@ public class GA {
 			totalFitness += chro.getFitness();
 			int index = 0;
 			while(true){
-				if(index + 1 > parents.size()){
+				if(index + 1 > maxParents.size()){
 					rouletteTable.add(chro);
 					break;
 				}
-				else if(chro.getFitness() < parents.get(index).getFitness()){
+				else if(chro.getFitness() < maxParents.get(index).getFitness()){
 					rouletteTable.add(index, chro);
 					break;
 				}
@@ -213,14 +220,14 @@ public class GA {
 		}
 		Variance = varHold / populationSize;
 		stdDeviation = Math.sqrt(Variance);
-		while(parents.size() < populationSize){
+		while(maxParents.size() < populationSize){
 			long selection = (long)(rand.nextDouble() * selectionRange);
 			int index = 0;
 			while(selection > 0){
 				Chromasome selected = rouletteTable.get(index);
 				selection -= index + 1;
 				if(selection<=0){
-					parents.add(selected);
+					maxParents.add(selected);
 				}
 				index++;
 			}
@@ -274,6 +281,30 @@ public class GA {
 				else{
 					holdDistance = getChromDifferenceDistance(father, c);
 					if(holdDistance < currentDistance){
+						mother = c;
+						currentDistance = holdDistance;
+					}
+				}
+			}
+		}
+		return mother;
+	}
+	
+	private Chromasome findMaxMate(Chromasome father, ArrayList<Chromasome> parentpool){
+		Chromasome mother = null;
+		double currentDistance = 0;
+		double holdDistance = 0;
+		boolean first = true;
+		for(Chromasome c : parentpool){
+			if(c != father){
+				if(first){
+					mother = c;
+					first = false;
+					currentDistance = getChromDifferenceDistance(father, mother);
+				}
+				else{
+					holdDistance = getChromDifferenceDistance(father, c);
+					if(holdDistance > currentDistance){
 						mother = c;
 						currentDistance = holdDistance;
 					}
