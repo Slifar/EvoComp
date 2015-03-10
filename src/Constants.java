@@ -19,7 +19,15 @@ public class Constants {
 	public static long mutations = 0; // The number of mutations that occur
 	public static boolean logDev = false; //Flag to set if we want to log stdDev/mu
 	public static int numValuesChangedforMutation = 0;//No longer used
-	public static boolean Roulette = true;//Flag to set if we use Roulette for parent selection. We use Rank if not
+	public static boolean Roulette = false;//Flag to set if we use Roulette for parent selection. We use Rank if not
 	public static boolean secondSA = false;//Flag to set if we use the first or second mutation operator in the SA algorithm
 	public static int stagnationValue = 500; //Number of generations to terminate after if not new best is found
+	public static boolean removeMothers = false;
+	public static boolean genBothChildren = false;
+	public static boolean childTourney = false;
+	public static boolean genChildrenDivideorMinus = false;// If true, generate populationSize/2 children. Otherwise populationsize-2
+	public static boolean constantFirstCity = false; //If the first city should be the same in each chromasome
+	public static int firstCity;
+	public static String aggregateOutputFile = "Totals.txt";
+	public static int numTrials = 10;
 }

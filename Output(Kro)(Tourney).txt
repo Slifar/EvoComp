@@ -1,0 +1,69 @@
+GA finished.
+ We ran for 1000 generations.
+ removeMothers was: false
+ genBothChildren was: true
+ The population size was: 100
+ Used tournament for child selection: true
+ The solution was found on generation: 947
+ It took 1000 generations, 100375 mutations, and the best chromasome was:
+ 76 13 39 44 50 2 40 54 64 69 73 68 85 82 95 33 37 78 96 5 52 48 30 3 29 71 41 100 14 43 46 83 34 55 87 9 7 20 86 35 27 12 57 62 60 77 45 23 91 98 32 47 28 67 51 81 61 25 58 93 1 56 8 92 75 97 80 31 89 42 63 6 49 36 99 59 15 17 11 21 38 24 18 53 70 26 66 65 4 19 90 88 22 16 94 79 10 84 72 74 
+ with a fitness of 31327.768568114596
+ The runtime was: 446.586858525 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :31327.0
+
+GA finished.
+ We ran for 1000 generations.
+ removeMothers was: false
+ genBothChildren was: true
+ The population size was: 100
+ Used tournament for child selection: true
+ The solution was found on generation: 977
+ It took 1000 generations, 200308 mutations, and the best chromasome was:
+ 100 71 41 3 14 43 46 12 83 9 34 29 52 78 96 30 48 39 85 68 37 5 33 76 13 95 82 50 44 73 2 40 64 54 69 67 58 28 93 61 81 25 51 77 62 87 57 7 55 27 86 35 20 60 98 1 8 80 31 42 56 89 97 90 79 18 53 16 22 94 88 70 4 65 26 66 19 75 92 63 6 49 10 47 72 21 74 15 17 32 91 45 23 11 59 84 24 36 38 99 
+ with a fitness of 31619.208151777497
+ The runtime was: 456.266284924 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :31619.0
+
+GA finished.
+ We ran for 1000 generations.
+ removeMothers was: false
+ genBothChildren was: true
+ The population size was: 100
+ Used tournament for child selection: true
+ The solution was found on generation: 985
+ It took 1000 generations, 300402 mutations, and the best chromasome was:
+ 61 87 51 81 25 69 64 54 40 2 44 50 73 39 78 52 30 48 82 13 76 95 33 5 37 96 14 41 71 100 46 3 43 29 34 83 55 35 27 86 12 20 57 7 9 68 85 89 42 31 80 56 97 19 75 4 66 22 94 16 88 70 65 26 53 79 10 90 8 92 67 28 58 93 98 91 45 17 15 11 32 47 77 62 60 23 1 6 49 63 72 74 59 21 84 24 18 99 36 38 
+ with a fitness of 32180.479765468135
+ The runtime was: 464.034148537 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :32180.0
+
+GA finished.
+ We ran for 1000 generations.
+ removeMothers was: false
+ genBothChildren was: true
+ The population size was: 100
+ Used tournament for child selection: true
+ The solution was found on generation: 991
+ It took 1000 generations, 400600 mutations, and the best chromasome was:
+ 84 10 53 19 65 26 66 4 97 75 56 31 80 89 42 64 54 44 50 2 40 69 25 68 85 39 95 13 76 33 5 37 96 52 78 82 73 81 87 51 9 55 34 46 14 71 41 100 48 30 29 43 3 83 7 57 20 86 12 27 35 60 91 45 17 11 15 32 21 72 74 59 36 99 38 16 70 94 22 88 18 24 79 90 49 6 92 63 1 93 28 67 58 61 77 62 23 98 47 8 
+ with a fitness of 31793.42116178064
+ The runtime was: 460.924927778 seconds
+ The final standard deviation of the population was: 40.32369030731191
+ The final Mu value for the population was :31879.0
+
+GA finished.
+ We ran for 1000 generations.
+ removeMothers was: false
+ genBothChildren was: true
+ The population size was: 100
+ Used tournament for child selection: true
+ The solution was found on generation: 991
+ It took 1000 generations, 500489 mutations, and the best chromasome was:
+ 94 16 88 53 19 90 10 79 22 70 66 65 26 4 97 75 56 31 89 80 8 92 1 42 67 81 25 85 68 61 51 87 57 20 77 60 62 35 27 86 12 9 7 55 83 34 29 46 43 14 3 100 71 41 52 48 30 39 96 78 5 37 33 13 95 76 82 2 44 50 73 69 40 54 64 28 6 63 49 84 38 18 24 99 36 21 59 72 74 17 15 11 32 45 23 93 58 47 98 91 
+ with a fitness of 29829.421088214098
+ The runtime was: 461.765946583 seconds
+ The final standard deviation of the population was: 49.85980344927164
+ The final Mu value for the population was :29864.0

@@ -46,22 +46,57 @@ public class GA {
 		//begin GA loop
 		do{
 			double diff = stdDeviation/mu;
-			if(Constants.Roulette) parentRoulette();//Generate the parent pool for this generation
-			else parentRank();
-			//Enter recombination loop
-			//population.clear();
+			parentRoulette();//Generate the parent pool for this generation
+			if (!Constants.Roulette) {
+				//Enter recombination loop
+				//population.clear();
+				for (int i = 0; i < populationSize; i++) {
+					maxParents.set(i, population.get(i));
+					minParents.set(i, population.get(i));
+				}
+			}
 			rouletteTable.clear();
-			for(int i = 0; i < populationSize/2; i++){
+			int loopTo;
+			if(Constants.genChildrenDivideorMinus) loopTo = populationSize/2;
+			else loopTo = populationSize-2;
+			for(int i = 0; i < loopTo; i++){
 				int select1 = rand.nextInt(maxParents.size());
 				Chromasome parent1 = maxParents.remove(select1);//Randomly select one parent
 				minParents.remove(parent1);
 				Chromasome parent2 = findMaxMate(parent1, maxParents);//maxParents.remove(rand.nextInt(maxParents.size()));//Randomly select the other parent
-				//maxParents.remove(parent2);
-				children.add(genChild(parent1, parent2));//Generate one of the children
-				//children.add(genChild(parent2, parent1));//Generate the other child
+				if(Constants.removeMothers){
+					maxParents.remove(parent2);
+				}
+				Chromasome child1;
+				Chromasome child2;
+				child1 = genChild(parent1, parent2);//Generate one of the children
+				if(Constants.genBothChildren || Constants.childTourney){
+					child2=genChild(parent2, parent1);//Generate the other child
+					if(Constants.childTourney){
+						children.add(childTourney(child1, child2));
+					}
+					else{
+						children.add(child1);
+						children.add(child2);
+					}
+				}
 				parent2 = findMinMate(parent1, minParents);//maxParents.remove(rand.nextInt(maxParents.size()));//Randomly select the other parent
-				//minParents.remove(parent2);
-				children.add(genChild(parent1, parent2));
+				if(Constants.removeMothers){
+					minParents.remove(parent2);
+				}
+				child1 = genChild(parent1, parent2);
+				if(Constants.genBothChildren || Constants.childTourney){
+					child2 = genChild(parent1, parent2);//Generate the other child
+					if(Constants.childTourney){
+						children.add(childTourney(child1, child2));
+					}
+					else{
+						children.add(child1);
+						children.add(child2);
+					}
+					
+				}
+				else children.add(child1);
 			}
 			maxParents.clear();
 			population = prunePopulation(children, population);//new ArrayList<Chromasome>(children);
@@ -82,17 +117,25 @@ public class GA {
 				if(true){
 					terminate = true;
 					long finalTime = System.nanoTime();
-					String crossoverUsed = "Uniform crossover";
-					String parentSelectionUsed = "Rank";
+					String crossoverUsed = "PMX";
+					String parentSelectionUsed = "All Chromasomes";
 					String mutationUsed = "Random Bit Change";
-					if(Constants.secondCrossover) crossoverUsed = "Single-Point Crossover";
+					String numChildrenProduced = "population size-2";
+					if(Constants.genChildrenDivideorMinus) numChildrenProduced = "populationSize/2";
+					if(Constants.secondCrossover) crossoverUsed = "Double-Bridge Kick";
 					if(Constants.secondMutation) mutationUsed = "Bit swap";
 					if(Constants.Roulette) parentSelectionUsed = "Roulette";
 					main.out.println("GA finished."
 							/*+ "\n The crossover used was " + crossoverUsed
-							+ "\n The mutation used was " + mutationUsed
-							+ "\n The parent selection used was " + parentSelectionUsed*/
+							+ "\n The mutation used was " + mutationUsed*/
+							+ "\n The parent selection used was " + parentSelectionUsed
+							+ "\n We ran for " + Constants.generationsToCheck + " generations."
+							+ "\n removeMothers was: " + Constants.removeMothers
+							+ "\n genBothChildren was: " + Constants.genBothChildren
+							+ "\n Had a constant first city: " + Constants.firstCity
 							+ "\n The population size was: " + population.size()
+							+ "\n Used tournament for child selection: " +Constants.childTourney
+							+ "\n Number of children generated each generation: " + numChildrenProduced
 							//+ "\n The minimum number of generations to run was: " + Constants.generationsToCheck
 							+ "\n The solution was found on generation: " + genFound
 							+ "\n It took " + this.generationCount + " generations, " + Constants.mutations + " mutations, and the best chromasome was:\n"
@@ -104,6 +147,11 @@ public class GA {
 							+ "\n The final Mu value for the population was :"
 							+ this.mu);
 					main.out.flush();
+					if(this.currentBest.fitness < main.currentBest || main.currentBest == 0) main.currentBest = this.currentBest.fitness;
+					for(int i = 0; i < populationSize; i++){
+						main.totalFit += population.get(i).getFitness();
+					}
+					main.totalChroms += this.populationSize;
 					System.out.println("One GA Done");
 				}
 				currentCheck = currentBest.getFitness();
@@ -150,6 +198,14 @@ public class GA {
 		if(mutationRoll <= Constants.mutationChance) child.mutate();
 		return child;
 	}
+	
+	public Chromasome childTourney(Chromasome child1, Chromasome child2){
+		double totalFitness = (1/child1.getFitness()) + (1/child2.getFitness());
+		Random rand = new Random();
+		double roll = rand.nextDouble() * totalFitness;
+		if(roll - child1.getFitness() < 0) return child1;
+		else return child2;
+	}
 
 	/**
 	 * Method to fill the parent pool, using Roulette. 
@@ -181,6 +237,7 @@ public class GA {
 				if(selection<0){
 					maxParents.add(selected);
 					minParents.add(selected);
+					
 				}
 				index++;
 			}
@@ -272,7 +329,7 @@ public class GA {
 		double holdDistance = 0;
 		boolean first = true;
 		for(Chromasome c : parentpool){
-			if(c != father){
+			if(true){
 				if(first){
 					mother = c;
 					first = false;
@@ -296,7 +353,7 @@ public class GA {
 		double holdDistance = 0;
 		boolean first = true;
 		for(Chromasome c : parentpool){
-			if(c != father){
+			if(true){
 				if(first){
 					mother = c;
 					first = false;
@@ -310,6 +367,7 @@ public class GA {
 					}
 				}
 			}
+			else System.out.println("Error!");
 		}
 		return mother;
 	}
@@ -334,7 +392,7 @@ public class GA {
 				if(!inserted)toPrune.add(c);
 			}
 		}
-		for(int i = 0; i <= Constants.populationSize; i++){
+		for(int i = 0; i < Constants.populationSize; i++){
 			toReturn.add(toPrune.get(i));
 		}
 		return toReturn;

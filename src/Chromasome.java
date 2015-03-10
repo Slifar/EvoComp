@@ -128,6 +128,18 @@ public class Chromasome {
 			}
 		}
 		Constants.mutations++;
+		if(Constants.constantFirstCity){
+			if(chromasome[0] != Constants.firstCity){
+				int hold = chromasome[0];
+				for(int i = 0; i < chromasome.length; i++){
+					if(chromasome[i] == Constants.firstCity){
+						chromasome[0] = Constants.firstCity;
+						chromasome[i] = hold;
+						break;
+					}
+				}
+			}
+		}
 	}
 	public boolean isFeasible(){
 		return this.isFeasible;
