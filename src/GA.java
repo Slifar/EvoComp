@@ -29,6 +29,9 @@ public class GA {
 		for(int i = 0; i < populationSize; i++){
 			Chromasome chro = new Chromasome();
 			chro.generate();
+			if(i == 0){
+				Constants.firstCity = chro.chromasome[0];
+			}
 			population.add(chro);
 		}
 	}
@@ -40,6 +43,11 @@ public class GA {
 		boolean terminate = false;
 		initialTime = System.nanoTime();
 		initialPop(); // Initialize population
+		if(Constants.constantFirstCity){
+			for(Chromasome chro : population){
+				chro.mutate();
+			}
+		}
 		currentBest = population.get(0); //We have to set the current best to be a chromosome, otherwise we'll register a best fitness of 0!
 		findBest();
 		currentCheck = currentBest.fitness;
@@ -63,7 +71,7 @@ public class GA {
 				int select1 = rand.nextInt(maxParents.size());
 				Chromasome parent1 = maxParents.remove(select1);//Randomly select one parent
 				minParents.remove(parent1);
-				Chromasome parent2 = findMaxMate(parent1, maxParents);//maxParents.remove(rand.nextInt(maxParents.size()));//Randomly select the other parent
+				Chromasome parent2 = findMaxMate(parent1, maxParents);//Randomly select the other parent
 				if(Constants.removeMothers){
 					maxParents.remove(parent2);
 				}
@@ -80,7 +88,7 @@ public class GA {
 						children.add(child2);
 					}
 				}
-				parent2 = findMinMate(parent1, minParents);//maxParents.remove(rand.nextInt(maxParents.size()));//Randomly select the other parent
+				parent2 = findMinMate(parent1, minParents);//Randomly select the other parent
 				if(Constants.removeMothers){
 					minParents.remove(parent2);
 				}
@@ -99,7 +107,7 @@ public class GA {
 				else children.add(child1);
 			}
 			maxParents.clear();
-			population = prunePopulation(children, population);//new ArrayList<Chromasome>(children);
+			population = prunePopulation(children, population);
 			children.clear();
 			//population.set(0, currentBest);//We dump the first child for our current best, to provide elitism
 			findBest();
@@ -130,6 +138,7 @@ public class GA {
 							+ "\n The mutation used was " + mutationUsed*/
 							+ "\n The parent selection used was " + parentSelectionUsed
 							+ "\n We ran for " + Constants.generationsToCheck + " generations."
+							+ "\n used constant first city: " + Constants.constantFirstCity
 							+ "\n removeMothers was: " + Constants.removeMothers
 							+ "\n genBothChildren was: " + Constants.genBothChildren
 							+ "\n Had a constant first city: " + Constants.firstCity

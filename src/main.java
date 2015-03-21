@@ -36,7 +36,7 @@ public class main {
 		totalFit = 0;
 		totalChroms=0;
 		currentBest = 0;
-		Constants.Roulette = true;
+		Constants.genChildrenDivideorMinus = true;
 		for(int i = 0; i < Constants.numTrials; i++){
 			ga = new GA();
 			ga.runGA();
@@ -46,43 +46,6 @@ public class main {
 		totalFit = 0;
 		totalChroms=0;
 		currentBest = 0;
-		Constants.genBothChildren = true;
-		for(int i = 0; i < Constants.numTrials; i++){
-			ga = new GA();
-			ga.runGA();
-			out.println("");
-		}
-		printTotalOutput();
-		totalFit = 0;
-		totalChroms=0;
-		currentBest = 0;
-		Constants.Roulette = false;
-		for(int i = 0; i < Constants.numTrials; i++){
-			ga = new GA();
-			ga.runGA();
-			out.println("");
-		}
-		printTotalOutput();
-		totalFit = 0;
-		totalChroms=0;
-		currentBest = 0;
-		Constants.removeMothers = true;
-		for(int i = 0; i < Constants.numTrials; i++){
-			ga = new GA();
-			ga.runGA();
-			out.println("");
-		}
-		printTotalOutput();
-		totalFit = 0;
-		totalChroms=0;
-		currentBest = 0;
-		Constants.genBothChildren = false;
-		for(int i = 0; i < Constants.numTrials; i++){
-			ga = new GA();
-			ga.runGA();
-			out.println("");
-		}
-		printTotalOutput();
 		System.out.println("Ding!");
 	}
 
@@ -104,7 +67,17 @@ public class main {
 		
 	}
 	
+	private static void resetAggOut(String outputFile){
+		try {
+			aggregateOut = new PrintWriter(new FileWriter(outputFile));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} 
+	}
+	
 	private static void printTotalOutput(){
+		System.out.println("Outputting totals...");
 		String crossoverUsed = "PMX";
 		String parentSelectionUsed = "All Chromasomes";
 		String mutationUsed = "Random Bit Change";
@@ -120,12 +93,13 @@ public class main {
 				+ "\n We ran for " + Constants.generationsToCheck + " generations."
 				+ "\n removeMothers was: " + Constants.removeMothers
 				+ "\n genBothChildren was: " + Constants.genBothChildren
-				+ "\n Had a constant first city: " + Constants.firstCity
+				//+ "\n Had a constant first city: " + Constants.firstCity
 				+ "\n The population size was: " + Constants.populationSize
 				+ "\n Used tournament for child selection: " +Constants.childTourney
 				+ "\n Number of children generated each generation: " + numChildrenProduced
 				+ "\n The best fitness found was: " + currentBest
 				+ "\n The average fitness found was: " + (totalFit/totalChroms)
+				+ "\n"
 				);
 		main.aggregateOut.flush();
 	}

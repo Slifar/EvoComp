@@ -1,67 +1,1799 @@
 GA finished.
- The parent selection used was All Chromasomes
+ The parent selection used was Roulette
  We ran for 1000 generations.
+ used constant first city: true
  removeMothers was: false
- genBothChildren was: false
- Had a constant first city: 0
+ genBothChildren was: true
+ Had a constant first city: 11
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: population size-2
+ The solution was found on generation: 813
+ It took 1000 generations, 196002 mutations, and the best chromasome was:
+ 12 27 20 57 87 9 7 51 25 61 81 68 39 30 96 5 37 76 13 33 95 82 78 52 48 100 71 41 14 3 43 46 29 83 34 55 86 35 77 62 60 23 45 91 98 58 67 28 93 1 47 32 15 17 11 59 74 72 21 10 90 49 6 63 8 92 19 75 65 26 66 70 16 88 22 94 18 24 38 99 36 84 79 53 4 97 56 80 31 42 89 54 2 64 40 69 73 44 50 85 
+ with a fitness of 27091.527237492508
+ The runtime was: 181.657820042 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :27091.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 25
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: population size-2
+ The solution was found on generation: 997
+ It took 1000 generations, 392678 mutations, and the best chromasome was:
+ 26 66 65 4 70 94 22 16 53 88 79 18 24 38 99 36 74 11 45 98 23 60 77 62 20 27 35 86 12 55 83 34 29 46 43 3 14 71 100 41 48 96 78 52 30 39 82 95 13 76 33 37 5 44 64 40 54 2 50 85 68 73 69 81 51 58 47 21 72 84 1 92 8 89 42 31 80 56 97 19 75 49 6 63 90 10 59 15 17 32 91 93 28 67 25 61 87 57 9 7 
+ with a fitness of 27457.35502063553
+ The runtime was: 180.109546076 seconds
+ The final standard deviation of the population was: 5.0990195135927845
+ The final Mu value for the population was :27486.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 1
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: population size-2
+ The solution was found on generation: 956
+ It took 1000 generations, 589806 mutations, and the best chromasome was:
+ 2 40 69 81 25 61 51 87 12 20 77 98 91 47 84 36 99 38 24 18 79 53 88 94 16 22 70 66 26 65 4 19 97 56 75 92 8 31 80 89 42 67 58 93 28 1 63 6 49 90 10 72 21 59 74 17 15 11 32 45 23 60 62 35 27 86 57 7 9 29 46 83 55 34 3 43 14 48 100 41 71 78 52 5 82 95 33 76 13 37 96 39 30 85 68 44 50 73 64 54 
+ with a fitness of 26025.82118872881
+ The runtime was: 177.671816719 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :26025.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 65
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: population size-2
+ The solution was found on generation: 848
+ It took 1000 generations, 785629 mutations, and the best chromasome was:
+ 66 26 65 70 22 16 88 79 18 94 53 19 90 10 84 24 38 99 36 72 59 74 21 11 15 17 32 47 1 63 6 49 92 75 4 97 56 80 31 89 42 8 67 93 28 58 81 73 39 30 78 52 96 5 37 48 100 71 41 14 3 43 46 29 34 55 7 9 87 51 61 25 69 40 64 54 2 95 76 33 13 82 44 50 68 85 57 20 86 62 23 98 91 45 60 77 35 27 12 83 
+ with a fitness of 26440.51619765434
+ The runtime was: 182.731878743 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :26440.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 45
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: population size-2
+ The solution was found on generation: 903
+ It took 1000 generations, 981533 mutations, and the best chromasome was:
+ 46 29 30 39 68 73 50 44 64 2 54 40 67 1 8 92 56 75 19 4 66 65 26 70 94 22 88 16 53 79 18 38 99 36 24 10 84 72 21 59 74 15 17 11 32 91 47 63 49 6 90 97 80 31 89 42 28 93 58 77 20 57 87 51 61 25 81 69 85 82 95 76 33 13 37 5 78 96 52 48 71 41 100 14 3 43 55 34 83 9 7 12 86 27 35 62 60 23 98 45 
+ with a fitness of 26839.75615611511
+ The runtime was: 183.763686089 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :26839.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 51
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: population size-2
+ The solution was found on generation: 982
+ It took 1000 generations, 1177079 mutations, and the best chromasome was:
+ 52 30 39 85 68 73 44 2 64 69 81 25 51 61 58 67 8 92 75 19 4 65 26 66 70 53 88 16 22 94 18 79 24 38 99 36 21 74 59 63 1 93 28 77 60 62 35 86 20 27 12 7 9 57 87 23 98 45 91 47 32 17 15 11 72 84 10 90 49 6 97 56 80 31 42 89 54 40 50 82 95 13 33 76 37 5 78 96 48 71 41 100 14 3 43 29 46 34 55 83 
+ with a fitness of 26707.77967820018
+ The runtime was: 180.065381702 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :26707.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 79
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: population size-2
+ The solution was found on generation: 968
+ It took 1000 generations, 1372889 mutations, and the best chromasome was:
+ 80 31 89 42 8 92 75 19 97 56 4 26 66 65 70 16 94 22 88 53 79 24 18 38 99 36 84 10 72 74 21 59 17 11 15 45 32 91 23 98 47 63 90 49 6 1 28 67 93 58 61 51 87 62 60 77 35 86 27 12 83 34 29 30 48 100 71 41 14 3 43 46 55 20 57 7 9 25 81 69 68 85 39 96 52 78 5 37 33 13 76 95 82 2 40 54 64 44 50 73 
+ with a fitness of 25049.56674830018
+ The runtime was: 180.758630314 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :25049.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 13
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: population size-2
+ The solution was found on generation: 980
+ It took 1000 generations, 1569244 mutations, and the best chromasome was:
+ 14 3 43 46 29 61 58 93 28 67 69 40 64 54 89 80 31 42 8 56 97 4 66 26 65 75 19 90 84 36 99 38 24 18 94 22 70 16 88 53 79 49 63 47 1 92 6 10 72 21 74 59 11 17 15 32 45 91 98 23 60 77 62 20 86 35 27 12 83 55 34 7 9 57 87 51 25 81 68 85 82 95 13 76 33 37 5 96 78 52 100 71 41 48 30 39 50 73 44 2 
+ with a fitness of 26331.100016764787
+ The runtime was: 180.554046011 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :26331.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 91
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: population size-2
+ The solution was found on generation: 867
+ It took 1000 generations, 1765037 mutations, and the best chromasome was:
+ 92 8 42 80 31 89 67 61 51 87 57 9 7 20 86 35 27 12 34 55 83 29 46 3 43 41 71 100 14 48 52 78 96 37 5 33 76 13 95 82 39 30 85 68 73 50 44 64 40 54 2 69 81 25 58 28 93 1 47 32 45 23 60 62 77 98 91 15 11 17 59 74 21 72 63 6 49 90 84 10 36 99 38 24 18 79 94 22 70 16 88 53 19 75 56 97 26 66 65 4 
+ with a fitness of 24790.6682508759
+ The runtime was: 180.67573455 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :24790.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 57
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: population size-2
+ The solution was found on generation: 884
+ It took 1000 generations, 1961054 mutations, and the best chromasome was:
+ 58 61 87 51 25 81 69 73 50 44 64 40 54 2 82 95 76 33 13 5 37 96 78 52 14 29 46 3 43 41 71 100 48 39 30 68 85 83 55 34 9 7 57 12 86 27 20 35 60 62 77 98 91 47 93 28 67 89 8 92 1 63 6 49 90 10 84 72 21 74 59 11 32 45 23 15 17 36 99 38 24 18 79 19 53 16 88 22 94 70 66 65 26 4 75 97 56 42 31 80 
+ with a fitness of 25921.220126501932
+ The runtime was: 181.60183534 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :25921.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 52
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: population size-2
+ The solution was found on generation: 971
+ It took 1000 generations, 2156996 mutations, and the best chromasome was:
+ 53 16 70 66 26 65 4 97 56 92 8 89 80 31 42 54 40 64 2 44 50 73 69 25 68 85 39 30 52 78 5 33 13 76 95 82 37 96 48 14 100 71 41 43 3 29 46 34 83 55 12 20 27 86 35 62 60 91 47 28 58 67 93 1 63 6 49 90 75 19 79 88 22 94 18 24 38 99 36 84 10 72 21 74 59 15 17 11 32 45 98 23 77 7 9 57 81 61 51 87 
+ with a fitness of 26293.035078552188
+ The runtime was: 182.34601202 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :26293.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 65
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: population size-2
+ The solution was found on generation: 886
+ It took 1000 generations, 2352572 mutations, and the best chromasome was:
+ 66 26 65 4 19 53 16 70 22 94 88 18 79 75 97 56 42 89 31 80 8 92 1 63 6 49 90 10 84 24 38 99 36 72 59 74 21 15 17 11 91 98 77 60 62 23 45 32 47 28 93 67 58 61 51 25 81 69 64 54 40 2 44 73 50 85 68 34 83 12 27 35 86 20 57 87 9 7 55 29 46 43 3 14 71 100 41 48 30 96 82 95 13 76 33 37 5 78 52 39 
+ with a fitness of 25160.97393038687
+ The runtime was: 187.450312425 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :25160.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 25
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: population size-2
+ The solution was found on generation: 999
+ It took 1000 generations, 2549291 mutations, and the best chromasome was:
+ 26 4 65 66 19 75 97 56 92 8 31 80 42 89 67 28 93 58 61 51 87 57 9 7 20 27 86 35 62 77 23 98 91 32 15 17 11 59 74 21 72 99 36 38 24 18 94 22 16 70 88 53 79 84 10 90 49 6 63 1 47 45 60 25 81 85 68 73 44 2 54 40 64 69 50 82 95 13 76 33 37 5 78 52 96 39 30 48 14 100 71 41 3 43 46 29 34 83 55 12 
+ with a fitness of 24316.3463148948
+ The runtime was: 176.889241398 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :24450.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 3
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: population size-2
+ The solution was found on generation: 983
+ It took 1000 generations, 2745269 mutations, and the best chromasome was:
+ 4 65 26 66 70 16 22 88 94 18 84 10 90 49 6 63 75 97 56 31 80 89 42 8 92 1 28 93 67 58 61 51 87 57 12 55 83 34 43 3 46 29 14 71 41 100 48 30 96 78 52 5 37 13 33 76 95 82 2 54 40 64 44 73 50 39 85 68 69 25 81 9 7 20 86 35 27 60 62 77 98 23 45 91 47 32 11 15 17 59 74 21 72 36 99 38 24 79 53 19 
+ with a fitness of 24110.19058645481
+ The runtime was: 177.554911157 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :24110.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 9
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: population size-2
+ The solution was found on generation: 946
+ It took 1000 generations, 2940704 mutations, and the best chromasome was:
+ 10 84 24 38 79 94 22 16 53 88 70 26 65 66 4 75 19 97 56 31 89 42 80 8 92 63 90 49 6 1 28 93 58 67 69 81 25 61 51 87 57 7 9 85 68 73 50 44 64 54 40 2 82 95 13 76 33 37 5 52 78 96 39 30 48 14 71 41 100 43 46 3 29 55 83 34 12 20 27 86 35 60 62 77 23 98 45 91 47 32 11 15 17 21 59 74 72 36 99 18 
+ with a fitness of 25108.754127303248
+ The runtime was: 180.488908421 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :25108.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 3
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: population size-2
+ The solution was found on generation: 990
+ It took 1000 generations, 3137331 mutations, and the best chromasome was:
+ 4 97 56 80 42 8 92 1 63 49 6 19 79 53 88 16 94 22 70 66 65 26 75 90 10 84 18 38 24 99 36 72 21 74 59 47 91 98 45 17 15 11 32 23 51 61 25 81 69 64 40 54 2 44 73 50 68 85 39 82 95 13 76 33 37 5 78 52 96 30 48 71 41 100 14 3 43 46 29 34 83 55 9 7 87 57 20 12 27 86 35 62 60 77 58 28 93 67 89 31 
+ with a fitness of 24920.175174314914
+ The runtime was: 177.208805911 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :24920.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 92
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: population size-2
+ The solution was found on generation: 899
+ It took 1000 generations, 3333041 mutations, and the best chromasome was:
+ 93 28 58 61 51 87 9 7 57 27 86 35 62 60 23 45 47 63 1 67 54 40 64 69 73 81 25 29 43 46 3 14 41 71 100 48 30 39 96 52 78 5 37 33 76 13 82 95 2 44 50 68 85 34 83 55 12 20 77 98 91 32 11 15 17 74 21 59 72 10 84 90 6 49 75 92 8 42 89 31 80 56 97 4 70 94 18 38 36 99 24 79 53 88 16 22 66 65 26 19 
+ with a fitness of 26358.851448406203
+ The runtime was: 181.065124395 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :26358.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 8
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: population size-2
+ The solution was found on generation: 870
+ It took 1000 generations, 3529040 mutations, and the best chromasome was:
+ 9 7 57 20 77 1 8 75 97 56 80 31 89 42 92 49 6 90 63 47 93 28 67 58 81 25 87 51 61 69 64 40 54 2 44 73 68 85 50 82 95 13 76 33 37 5 52 78 96 30 39 100 71 41 14 48 3 43 46 29 34 83 55 12 27 86 35 62 60 23 98 91 45 32 11 15 17 59 74 21 72 84 10 24 99 36 38 18 79 94 70 22 16 88 53 19 65 26 66 4 
+ with a fitness of 25096.379615540947
+ The runtime was: 181.163189202 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :25096.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 79
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: population size-2
+ The solution was found on generation: 970
+ It took 1000 generations, 3725249 mutations, and the best chromasome was:
+ 80 31 89 8 42 56 97 92 1 63 47 59 21 72 84 10 90 6 49 75 19 4 65 26 66 53 79 88 16 70 22 94 18 24 38 99 36 74 15 17 11 32 45 91 98 23 77 60 62 93 28 58 67 69 64 40 54 2 73 81 25 61 51 87 57 9 7 20 27 35 86 12 55 83 34 29 46 43 71 100 48 52 78 96 5 37 33 76 13 95 82 44 50 68 85 39 30 14 3 41 
+ with a fitness of 24882.996089756438
+ The runtime was: 184.577628436 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :24882.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 74
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: population size-2
+ The solution was found on generation: 914
+ It took 1000 generations, 3921536 mutations, and the best chromasome was:
+ 75 19 70 26 4 65 66 88 22 94 16 53 79 90 49 6 97 56 80 31 89 42 8 92 1 63 47 32 11 17 15 59 99 24 18 38 36 10 84 72 21 74 91 98 45 23 60 62 57 81 69 40 54 64 2 82 95 13 33 76 37 5 52 78 96 14 29 34 83 55 7 9 87 51 61 25 73 50 44 68 85 39 30 48 100 41 71 3 43 46 12 27 35 86 20 77 93 28 67 58 
+ with a fitness of 27086.892064682164
+ The runtime was: 183.008187056 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :27086.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 83
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: population size-2
+ The solution was found on generation: 942
+ It took 1000 generations, 4117644 mutations, and the best chromasome was:
+ 84 72 21 74 59 47 32 15 17 11 45 91 98 23 60 77 62 35 86 20 27 12 55 83 34 9 7 57 87 51 61 25 81 69 44 50 73 68 85 29 46 43 3 14 71 41 100 48 30 39 52 78 96 5 37 76 95 33 13 82 2 64 54 40 67 58 93 28 1 63 10 36 99 38 24 18 79 88 70 22 94 16 53 19 4 66 65 26 97 56 80 31 89 42 8 92 49 6 90 75 
+ with a fitness of 24323.392365788757
+ The runtime was: 183.12703719 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :24323.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 83
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: population size-2
+ The solution was found on generation: 989
+ It took 1000 generations, 4313881 mutations, and the best chromasome was:
+ 84 10 36 99 38 24 79 18 94 22 16 88 70 66 26 65 4 53 19 6 49 90 75 56 97 80 31 89 64 40 54 2 44 73 68 85 81 61 25 69 50 82 95 13 76 33 5 37 78 52 96 39 30 48 71 41 100 14 3 43 46 29 34 83 55 35 27 86 12 7 9 87 51 57 20 60 62 77 23 45 98 91 32 17 15 11 63 92 1 8 42 67 58 28 93 47 72 21 74 59 
+ with a fitness of 26511.846698391568
+ The runtime was: 179.802274339 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :26511.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 18
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: population size-2
+ The solution was found on generation: 938
+ It took 1000 generations, 4510032 mutations, and the best chromasome was:
+ 19 53 88 16 22 94 70 65 26 66 4 75 97 80 56 31 89 42 8 92 63 6 49 90 10 84 79 18 24 38 99 36 72 21 74 59 47 91 98 45 32 15 17 11 23 60 62 77 58 25 81 69 73 68 85 50 44 64 40 54 2 82 95 13 76 33 37 5 52 78 96 39 30 48 100 41 71 14 43 3 46 29 34 83 55 7 12 27 86 35 20 9 57 87 51 61 93 28 67 1 
+ with a fitness of 24673.434586824565
+ The runtime was: 183.437519667 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :24673.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 54
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: population size-2
+ The solution was found on generation: 927
+ It took 1000 generations, 4706057 mutations, and the best chromasome was:
+ 55 83 34 20 35 60 77 47 91 32 15 17 11 21 74 59 36 24 38 99 84 10 72 90 53 79 18 94 88 16 22 70 4 65 26 66 19 75 97 56 80 31 42 89 8 92 63 49 6 1 28 67 58 61 25 51 87 7 57 9 12 86 27 62 45 98 23 93 69 81 68 85 30 39 14 71 41 100 43 3 46 29 48 52 78 96 5 37 33 76 13 95 82 2 54 40 64 44 50 73 
+ with a fitness of 27718.86625912667
+ The runtime was: 182.946660076 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :27718.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 73
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: population size-2
+ The solution was found on generation: 919
+ It took 1000 generations, 4902545 mutations, and the best chromasome was:
+ 74 21 72 10 84 38 24 99 36 59 17 15 32 11 45 23 98 91 47 63 1 92 6 49 90 79 18 53 88 16 94 22 70 66 65 26 4 75 19 97 56 42 89 31 80 8 67 28 93 58 60 77 62 35 86 27 20 12 43 3 46 34 83 55 7 9 57 87 51 25 81 61 69 73 50 68 39 85 29 14 41 71 100 48 30 96 78 52 5 37 33 76 13 95 82 44 64 40 54 2 
+ with a fitness of 25524.843895748603
+ The runtime was: 180.257062522 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :25524.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 97
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: population size-2
+ The solution was found on generation: 986
+ It took 1000 generations, 5098664 mutations, and the best chromasome was:
+ 98 91 23 60 77 62 35 86 27 12 20 87 57 7 34 29 46 3 14 48 100 41 71 43 83 55 9 25 81 73 50 68 85 30 78 52 96 39 37 5 95 33 76 13 82 44 2 54 64 40 69 61 51 58 67 28 93 1 47 45 32 11 15 17 74 59 21 72 84 79 18 24 38 99 36 10 90 49 6 63 92 8 89 31 80 42 56 75 19 53 22 88 94 16 70 66 26 65 4 97 
+ with a fitness of 25663.222812263786
+ The runtime was: 177.461147989 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :25663.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 52
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: population size-2
+ The solution was found on generation: 990
+ It took 1000 generations, 5294550 mutations, and the best chromasome was:
+ 53 19 75 90 10 84 36 99 38 24 18 79 88 16 94 22 70 26 65 66 4 56 97 80 89 31 42 8 92 49 6 63 1 28 93 67 64 40 54 2 95 13 76 33 37 5 82 44 50 73 69 51 87 81 25 61 58 98 91 45 32 11 15 17 59 74 21 72 47 23 77 60 62 35 86 27 20 57 7 9 68 85 39 96 78 52 30 71 41 100 48 14 3 43 46 29 34 83 55 12 
+ with a fitness of 25895.765896708886
+ The runtime was: 177.580974283 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :25895.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 13
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: population size-2
+ The solution was found on generation: 987
+ It took 1000 generations, 5490529 mutations, and the best chromasome was:
+ 14 71 41 100 48 96 82 95 76 13 33 37 5 78 39 50 44 2 69 81 25 61 51 77 62 60 23 98 45 91 32 11 15 17 59 74 21 72 10 90 53 88 22 16 70 94 79 18 24 38 99 36 84 47 28 58 67 93 1 63 6 49 92 56 97 26 66 65 4 19 75 8 80 31 42 89 54 40 64 73 68 85 34 55 20 86 35 27 12 7 57 87 9 83 29 3 43 46 30 52 
+ with a fitness of 27284.58321564257
+ The runtime was: 177.727163463 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :27284.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 63
  The population size was: 100
  Used tournament for child selection: false
  Number of children generated each generation: population size-2
  The solution was found on generation: 994
- It took 1000 generations, 98007 mutations, and the best chromasome was:
- 52 14 13 27 26 47 28 12 25 6 15 5 43 33 9 10 8 41 19 45 32 49 22 1 18 21 30 42 2 7 17 3 31 23 20 50 16 29 46 37 34 44 35 36 39 40 38 24 48 4 51 11 
- with a fitness of 8338.333506299874
- The runtime was: 34.290485873 seconds
+ It took 1000 generations, 5686973 mutations, and the best chromasome was:
+ 64 40 54 2 82 95 76 33 13 37 5 78 52 48 29 46 43 3 14 41 71 100 30 96 39 85 68 73 50 44 69 61 25 81 51 87 57 9 7 34 83 55 12 86 35 27 20 58 67 28 93 1 32 45 91 98 23 77 62 60 17 15 11 74 21 47 63 6 49 75 92 8 42 89 31 80 56 4 97 19 90 10 84 36 99 24 38 18 53 65 26 66 70 22 94 16 88 79 72 59 
+ with a fitness of 26370.59160399248
+ The runtime was: 181.79154032 seconds
  The final standard deviation of the population was: 0.0
- The final Mu value for the population was :8338.0
+ The final Mu value for the population was :26370.0
 
 GA finished.
- The parent selection used was All Chromasomes
+ The parent selection used was Roulette
  We ran for 1000 generations.
+ used constant first city: true
  removeMothers was: false
- genBothChildren was: false
- Had a constant first city: 0
+ genBothChildren was: true
+ Had a constant first city: 17
  The population size was: 100
  Used tournament for child selection: false
  Number of children generated each generation: population size-2
- The solution was found on generation: 961
- It took 1000 generations, 196254 mutations, and the best chromasome was:
- 52 13 14 27 26 47 28 12 25 4 6 5 40 37 39 44 34 35 36 45 19 10 9 8 41 3 18 31 1 49 32 22 23 30 7 2 42 17 21 20 50 29 16 46 48 24 38 15 43 33 51 11 
- with a fitness of 8373.119385989143
- The runtime was: 33.987829813 seconds
+ The solution was found on generation: 955
+ It took 1000 generations, 5883261 mutations, and the best chromasome was:
+ 18 94 88 16 22 70 53 19 79 84 24 38 99 36 21 74 59 72 10 90 49 6 63 92 8 42 89 31 80 56 26 66 65 4 97 75 1 47 28 93 67 58 61 51 87 25 81 69 73 68 85 50 44 64 40 54 2 82 95 33 76 13 37 5 78 39 30 96 52 48 100 41 71 14 3 43 46 29 34 83 55 12 7 9 57 20 86 27 35 62 77 60 23 98 91 45 32 11 15 17 
+ with a fitness of 23904.504351210333
+ The runtime was: 179.831227502 seconds
  The final standard deviation of the population was: 0.0
- The final Mu value for the population was :8373.0
+ The final Mu value for the population was :23904.0
 
 GA finished.
- The parent selection used was All Chromasomes
+ The parent selection used was Roulette
  We ran for 1000 generations.
+ used constant first city: true
  removeMothers was: false
- genBothChildren was: false
- Had a constant first city: 0
+ genBothChildren was: true
+ Had a constant first city: 78
  The population size was: 100
  Used tournament for child selection: false
  Number of children generated each generation: population size-2
+ The solution was found on generation: 986
+ It took 1000 generations, 6079373 mutations, and the best chromasome was:
+ 79 18 94 88 16 22 70 53 19 65 26 66 4 97 75 56 80 31 89 42 8 92 1 28 93 32 11 17 15 59 74 21 72 36 99 38 24 10 84 90 49 6 63 47 91 98 45 23 77 35 86 62 60 58 67 69 64 54 40 2 85 39 37 5 52 78 96 30 48 100 41 71 14 3 43 29 46 34 55 7 9 83 51 25 81 61 73 44 95 76 33 13 82 50 68 87 57 20 12 27 
+ with a fitness of 27575.563425673987
+ The runtime was: 179.058850645 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :27575.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 65
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: population size-2
+ The solution was found on generation: 976
+ It took 1000 generations, 6275304 mutations, and the best chromasome was:
+ 66 26 4 65 97 75 19 70 22 16 88 94 79 53 49 6 47 98 23 91 45 32 11 15 17 72 74 21 59 99 36 38 24 18 84 10 90 63 92 56 80 31 89 42 8 1 28 77 60 62 35 27 86 20 12 55 34 83 9 7 57 87 85 68 81 61 58 93 67 69 73 50 39 30 3 43 46 29 14 41 71 100 48 52 78 96 5 37 33 76 13 95 82 44 2 40 54 64 25 51 
+ with a fitness of 26610.223349125772
+ The runtime was: 180.151812635 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :26610.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 2
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: population size-2
+ The solution was found on generation: 937
+ It took 1000 generations, 6471011 mutations, and the best chromasome was:
+ 3 43 29 30 39 85 68 50 44 73 87 51 57 9 7 55 34 83 12 20 27 86 35 62 60 77 23 98 32 45 91 47 93 1 92 63 6 49 90 19 4 65 66 26 70 22 16 88 94 18 84 10 72 11 15 17 59 74 21 36 99 38 24 79 53 75 97 56 80 31 8 42 89 67 58 28 61 25 81 69 40 64 54 2 82 95 13 76 33 37 5 78 96 52 48 71 41 100 14 46 
+ with a fitness of 25592.89735514141
+ The runtime was: 175.163368772 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :25592.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 66
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: population size-2
+ The solution was found on generation: 996
+ It took 1000 generations, 6667461 mutations, and the best chromasome was:
+ 67 81 25 51 87 9 7 55 83 34 29 46 43 3 14 41 71 100 48 30 96 78 52 39 5 37 33 76 13 95 82 2 85 68 73 50 44 54 40 64 69 89 80 31 42 8 75 56 97 4 66 26 65 19 53 16 70 22 94 88 79 18 84 36 72 47 32 45 91 98 23 77 60 62 35 27 86 12 20 57 61 58 28 93 1 92 6 63 49 90 10 24 38 99 59 74 21 17 11 15 
+ with a fitness of 26298.083598470705
+ The runtime was: 179.257397279 seconds
+ The final standard deviation of the population was: 247.43281916512208
+ The final Mu value for the population was :26483.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 32
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: population size-2
+ The solution was found on generation: 898
+ It took 1000 generations, 6863318 mutations, and the best chromasome was:
+ 33 76 95 82 13 37 5 52 78 96 14 29 46 43 3 41 71 100 48 30 39 73 69 81 25 51 87 57 9 7 12 27 86 77 60 62 23 98 91 45 11 32 17 15 59 74 21 72 63 49 6 90 19 4 66 26 65 70 16 22 94 88 53 79 18 38 99 36 24 84 10 47 1 92 42 89 31 80 56 97 75 8 67 28 93 58 61 64 40 54 2 44 50 68 85 34 55 83 35 20 
+ with a fitness of 25828.792708554756
+ The runtime was: 178.894121906 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :25828.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 67
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: population size-2
+ The solution was found on generation: 852
+ It took 1000 generations, 7059629 mutations, and the best chromasome was:
+ 68 85 30 39 5 37 33 13 76 95 82 50 73 44 2 64 40 54 69 67 58 93 28 42 89 31 80 56 97 75 19 4 26 65 66 53 84 10 72 59 74 21 36 99 38 24 18 94 22 70 16 88 79 90 49 6 92 8 1 63 47 32 11 17 15 60 27 12 86 20 77 98 91 45 23 62 35 29 14 48 96 78 52 100 41 71 3 43 46 83 34 55 7 57 25 81 61 51 87 9 
+ with a fitness of 27487.13858985693
+ The runtime was: 177.862977764 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :27487.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 24
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: population size-2
+ The solution was found on generation: 962
+ It took 1000 generations, 7255757 mutations, and the best chromasome was:
+ 25 81 61 51 87 12 86 77 23 45 32 11 17 15 36 99 38 24 90 49 6 63 1 92 19 53 88 94 22 16 70 65 26 66 4 79 18 84 10 74 59 21 72 47 91 98 60 62 35 20 27 43 3 46 29 14 41 71 100 48 52 78 96 85 68 50 2 54 40 64 69 73 44 82 95 13 76 33 37 5 39 30 34 83 55 7 9 57 58 93 28 67 8 56 80 31 89 42 97 75 
+ with a fitness of 27241.511019042675
+ The runtime was: 184.477446944 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :27241.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 43
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: population size-2
+ The solution was found on generation: 976
+ It took 1000 generations, 7451886 mutations, and the best chromasome was:
+ 44 50 73 82 95 13 33 76 78 52 96 5 37 39 30 20 57 51 61 67 63 53 70 22 66 26 65 4 97 75 19 79 18 84 10 72 21 47 93 28 58 68 85 29 34 83 55 12 27 86 35 62 60 77 98 23 45 91 32 17 15 11 74 59 36 99 38 24 94 88 16 90 49 6 92 1 8 56 80 31 42 89 40 54 2 64 69 81 25 87 9 7 46 43 100 48 41 71 14 3 
+ with a fitness of 30053.26915801388
+ The runtime was: 187.762292272 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :30053.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 14
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: population size-2
+ The solution was found on generation: 976
+ It took 1000 generations, 7648150 mutations, and the best chromasome was:
+ 15 17 11 23 98 60 62 12 27 86 35 83 55 43 29 46 3 14 71 41 100 48 78 52 96 37 5 30 39 85 68 50 73 44 82 76 13 33 95 2 64 40 54 69 81 25 51 87 61 58 67 28 93 47 91 45 32 59 74 21 72 10 84 36 99 24 38 18 79 94 22 70 66 26 65 4 16 88 53 90 49 92 8 42 80 31 89 56 97 19 75 63 6 1 77 20 57 9 7 34 
+ with a fitness of 27027.13072439033
+ The runtime was: 180.950101158 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :27027.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 45
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: population size-2
+ The solution was found on generation: 982
+ It took 1000 generations, 7844595 mutations, and the best chromasome was:
+ 46 43 3 41 71 100 30 96 39 85 68 73 50 44 2 40 54 67 8 42 31 80 89 56 97 53 79 16 70 22 94 88 66 26 65 4 75 19 90 6 49 63 92 1 47 32 91 98 93 28 58 61 51 87 25 81 69 64 82 95 13 76 33 37 5 78 52 48 14 29 34 83 55 7 9 57 20 27 12 86 35 62 60 77 23 45 74 21 72 10 84 24 18 38 36 99 59 15 17 11 
+ with a fitness of 26499.98722070159
+ The runtime was: 177.749290112 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :26499.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 73
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: population size-2
+ The solution was found on generation: 761
+ It took 1000 generations, 8040235 mutations, and the best chromasome was:
+ 74 21 59 36 99 24 18 94 22 16 88 53 79 38 84 10 72 32 47 91 98 60 62 35 86 20 27 12 55 85 68 81 67 58 61 51 25 69 64 40 54 2 73 44 50 82 95 76 13 33 37 5 39 96 78 52 30 29 14 48 100 71 41 3 43 46 34 83 7 9 57 87 77 23 28 93 8 56 26 65 4 66 70 19 75 97 80 31 89 42 92 1 63 6 49 90 17 15 11 45 
+ with a fitness of 28346.881394636122
+ The runtime was: 180.506665734 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :28346.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 5
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: population size-2
+ The solution was found on generation: 980
+ It took 1000 generations, 8236911 mutations, and the best chromasome was:
+ 6 75 19 53 79 88 70 66 4 65 26 97 56 80 89 31 42 8 92 67 93 28 58 54 40 64 2 44 82 33 76 13 95 37 5 52 78 96 30 39 68 85 50 73 69 25 81 61 51 87 57 9 7 55 83 34 29 46 14 100 41 71 48 3 43 27 35 86 12 20 77 62 60 23 98 91 45 32 11 17 15 59 74 21 72 47 1 63 49 90 10 84 36 99 38 24 18 94 22 16 
+ with a fitness of 24900.75883687158
+ The runtime was: 176.631131578 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :24900.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 98
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: population size-2
+ The solution was found on generation: 972
+ It took 1000 generations, 8432973 mutations, and the best chromasome was:
+ 99 36 38 24 18 79 53 22 94 88 16 70 66 65 26 4 19 75 97 56 80 89 67 58 61 87 9 7 55 83 34 29 46 43 3 14 41 71 100 48 30 82 95 13 33 76 37 5 78 52 96 39 85 68 73 50 44 2 54 40 64 69 25 81 51 57 20 12 27 86 35 62 60 77 98 23 45 91 93 28 1 47 32 11 17 15 59 74 21 72 84 10 90 49 6 63 92 8 42 31 
+ with a fitness of 23405.20423254846
+ The runtime was: 178.078033902 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :23405.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 19
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: population size-2
+ The solution was found on generation: 945
+ It took 1000 generations, 8628825 mutations, and the best chromasome was:
+ 20 86 35 27 12 43 46 3 14 71 41 100 48 29 34 83 55 9 7 87 61 64 54 40 2 44 73 50 82 95 13 76 33 5 37 52 78 96 30 39 85 68 69 81 25 51 58 67 28 93 1 47 63 6 49 53 79 18 94 88 16 22 70 26 65 66 4 97 56 80 31 89 42 8 92 75 19 90 84 24 38 99 36 10 72 74 21 59 11 17 15 32 45 91 23 98 60 62 77 57 
+ with a fitness of 24869.924585276367
+ The runtime was: 176.948971246 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :24869.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 50
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: population size-2
+ The solution was found on generation: 971
+ It took 1000 generations, 8824541 mutations, and the best chromasome was:
+ 51 61 25 81 9 57 7 20 12 27 86 35 62 60 23 98 91 11 17 15 72 21 74 59 36 99 38 24 84 10 18 79 94 70 22 16 88 53 90 19 75 49 6 32 45 77 83 55 29 3 14 43 46 34 87 58 28 93 47 63 1 92 4 65 66 26 97 56 31 80 89 42 8 67 69 64 40 54 2 44 50 73 68 85 39 30 96 5 37 33 13 76 95 82 78 52 48 41 100 71 
+ with a fitness of 27917.84922298802
+ The runtime was: 181.823758438 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :27917.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 13
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: population size-2
+ The solution was found on generation: 881
+ It took 1000 generations, 9020149 mutations, and the best chromasome was:
+ 14 43 46 29 81 25 61 77 60 98 91 45 17 15 59 74 21 72 84 90 49 6 92 8 89 42 31 80 56 26 65 66 4 97 75 19 53 70 22 94 16 88 79 18 24 38 36 99 10 63 1 28 93 67 58 51 87 9 57 7 85 68 73 69 64 40 54 2 44 50 39 30 52 78 5 37 82 95 13 33 76 96 48 100 71 41 3 34 83 55 12 20 86 27 35 62 23 47 32 11 
+ with a fitness of 26714.579447850472
+ The runtime was: 178.785166459 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :26714.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 81
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: population size-2
+ The solution was found on generation: 965
+ It took 1000 generations, 9216376 mutations, and the best chromasome was:
+ 82 95 76 33 13 48 100 71 41 14 43 3 46 9 7 57 87 51 61 58 67 28 93 1 6 49 63 92 8 42 89 80 31 56 97 75 4 66 65 26 19 90 10 84 79 53 70 22 88 16 94 18 24 38 99 36 72 21 74 59 15 17 11 47 32 45 98 91 23 60 62 77 20 27 86 35 12 55 83 34 29 30 52 78 96 37 5 85 68 81 25 69 64 54 40 2 44 73 50 39 
+ with a fitness of 25208.416248778045
+ The runtime was: 176.916743089 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :25208.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 18
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: population size-2
+ The solution was found on generation: 972
+ It took 1000 generations, 9412461 mutations, and the best chromasome was:
+ 19 53 79 18 24 99 38 84 10 90 49 6 92 1 63 47 32 91 23 98 62 60 77 93 28 58 61 25 81 68 85 39 82 95 13 76 33 37 5 96 78 52 48 71 41 100 14 30 29 46 43 3 34 83 55 7 12 27 86 35 20 9 57 87 51 69 73 50 44 2 64 40 54 67 8 42 89 31 80 56 97 75 4 65 26 66 70 88 22 16 94 36 59 74 21 72 11 15 17 45 
+ with a fitness of 25689.262455909808
+ The runtime was: 176.165121441 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :25689.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 82
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: population size-2
+ The solution was found on generation: 925
+ It took 1000 generations, 9608711 mutations, and the best chromasome was:
+ 83 34 55 12 20 77 60 62 86 35 27 57 9 7 87 51 25 69 64 54 40 2 44 73 68 50 82 95 13 33 76 37 5 30 29 46 43 3 14 71 41 100 48 52 78 96 39 85 81 61 58 67 28 93 1 63 6 49 90 53 88 16 94 22 70 66 65 26 4 19 75 97 56 80 31 42 89 8 92 47 98 23 45 32 11 15 17 59 74 21 72 36 99 24 38 18 79 84 10 91 
+ with a fitness of 24736.75861487446
+ The runtime was: 181.519754523 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :24736.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 72
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: population size-2
+ The solution was found on generation: 810
+ It took 1000 generations, 9804577 mutations, and the best chromasome was:
+ 73 69 25 28 67 89 31 80 42 8 56 75 19 53 79 88 16 94 22 70 66 26 65 4 97 92 49 6 90 10 84 18 24 38 99 36 72 21 74 59 15 17 11 91 23 98 60 45 32 47 63 1 93 58 61 81 64 40 54 2 44 50 82 95 13 76 33 5 37 52 78 96 30 100 41 71 48 14 3 43 46 29 34 83 55 12 27 86 35 62 77 20 57 9 7 51 87 68 85 39 
+ with a fitness of 25953.75434639373
+ The runtime was: 179.604354477 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :25953.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 15
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: populationSize/2
+ The solution was found on generation: 967
+ It took 1000 generations, 9905005 mutations, and the best chromasome was:
+ 16 70 94 90 10 63 47 23 77 60 62 87 81 73 50 95 82 44 2 40 64 54 69 67 1 92 8 80 31 89 42 75 53 88 22 18 24 38 99 36 59 74 11 32 45 98 91 15 17 21 72 84 79 19 66 26 65 4 97 56 6 49 93 28 58 57 20 86 35 27 12 83 55 30 39 85 68 25 61 51 7 9 34 29 43 3 46 41 71 100 14 48 96 52 78 5 37 13 33 76 
+ with a fitness of 30213.390950036544
+ The runtime was: 536.349948782 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :30213.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 92
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: populationSize/2
+ The solution was found on generation: 899
+ It took 1000 generations, 10004928 mutations, and the best chromasome was:
+ 93 28 58 67 1 47 23 60 77 62 86 35 57 20 27 12 55 83 34 46 43 3 41 100 71 48 14 29 30 52 5 37 13 76 33 95 82 78 96 39 85 68 50 44 2 54 40 64 73 69 81 25 61 51 87 7 9 98 91 45 32 11 17 15 59 74 21 72 84 10 49 75 19 97 56 80 42 31 89 8 92 63 6 90 36 99 24 38 18 79 16 22 70 94 88 53 4 26 65 66 
+ with a fitness of 26201.18087080447
+ The runtime was: 530.074081649 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :26201.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 70
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: populationSize/2
+ The solution was found on generation: 992
+ It took 1000 generations, 10105110 mutations, and the best chromasome was:
+ 71 41 3 46 34 7 9 57 87 51 58 67 28 1 63 92 8 31 42 89 80 56 4 19 90 10 84 36 99 18 38 24 79 53 88 94 22 16 70 66 26 65 97 75 49 6 72 21 74 59 17 15 47 23 60 62 35 55 83 68 73 44 50 82 95 76 33 13 37 5 78 100 48 30 14 29 43 12 27 86 20 77 98 91 45 11 32 93 64 40 54 2 69 61 25 81 85 39 96 52 
+ with a fitness of 29789.95261943719
+ The runtime was: 536.990337089 seconds
+ The final standard deviation of the population was: 34.249087579087416
+ The final Mu value for the population was :29823.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 14
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: populationSize/2
+ The solution was found on generation: 992
+ It took 1000 generations, 10205215 mutations, and the best chromasome was:
+ 15 11 45 23 98 91 47 93 28 58 81 51 61 54 64 67 8 89 42 31 80 97 56 92 1 63 6 90 49 75 19 53 4 65 66 26 70 22 16 88 94 79 18 38 36 99 24 84 10 72 17 59 74 21 32 77 62 60 35 27 86 20 12 7 34 46 29 100 41 71 48 78 52 5 13 82 95 76 33 37 96 39 30 14 3 43 55 83 57 9 87 25 69 73 68 85 50 44 2 40 
+ with a fitness of 28776.574653117794
+ The runtime was: 533.603148837 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :28776.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 80
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: populationSize/2
+ The solution was found on generation: 996
+ It took 1000 generations, 10305739 mutations, and the best chromasome was:
+ 81 61 58 67 28 93 1 63 47 77 62 35 27 55 7 9 57 87 51 25 69 40 54 64 2 44 50 73 68 85 82 95 33 13 76 37 5 30 39 78 96 52 48 14 71 41 100 43 3 29 46 34 83 12 20 86 60 23 98 45 91 32 15 11 17 59 21 74 72 79 53 22 16 70 66 26 65 4 19 56 97 90 10 84 36 38 18 24 99 94 88 49 6 92 42 80 31 89 8 75 
+ with a fitness of 27731.408401162884
+ The runtime was: 527.81574837 seconds
+ The final standard deviation of the population was: 83.04215796810678
+ The final Mu value for the population was :27814.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 77
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: populationSize/2
+ The solution was found on generation: 866
+ It took 1000 generations, 10406114 mutations, and the best chromasome was:
+ 78 96 5 37 52 48 41 14 71 100 43 46 55 83 34 29 3 30 39 85 68 73 50 44 82 95 33 76 13 2 54 64 40 69 25 81 58 67 8 92 42 89 80 31 56 97 75 19 4 26 65 66 70 88 22 16 94 18 38 99 36 59 74 10 90 6 1 93 28 61 87 51 7 57 20 12 27 86 9 23 45 11 17 15 32 21 72 84 24 79 53 49 63 47 91 98 77 60 62 35 
+ with a fitness of 28704.77588505565
+ The runtime was: 548.148225545 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :28704.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 21
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: populationSize/2
+ The solution was found on generation: 983
+ It took 1000 generations, 10506389 mutations, and the best chromasome was:
+ 22 88 53 79 18 19 97 75 49 6 63 8 42 80 31 89 28 87 30 39 5 37 52 78 96 48 100 71 41 43 3 14 46 29 34 55 83 57 9 7 20 12 27 86 35 62 77 60 23 98 91 45 11 17 15 47 32 72 21 74 59 99 36 38 24 84 10 90 94 16 70 66 65 26 4 56 92 1 67 93 58 61 25 81 51 69 64 40 54 2 44 50 73 68 85 82 95 76 13 33 
+ with a fitness of 27813.764813602356
+ The runtime was: 554.188451435 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :27813.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 43
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: populationSize/2
+ The solution was found on generation: 918
+ It took 1000 generations, 10606744 mutations, and the best chromasome was:
+ 44 73 69 61 81 25 51 87 9 7 57 27 12 20 62 60 32 74 21 36 99 38 84 72 59 15 17 11 45 23 77 58 28 93 67 50 68 85 30 39 29 55 43 3 46 34 83 86 35 98 91 47 1 63 75 56 97 4 66 26 65 70 22 94 16 88 53 19 10 24 18 79 90 49 6 92 42 8 31 80 89 64 40 54 2 76 33 82 95 13 96 78 52 37 5 48 14 71 41 100 
+ with a fitness of 31337.670582537205
+ The runtime was: 559.172464002 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :31337.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 86
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: populationSize/2
+ The solution was found on generation: 988
+ It took 1000 generations, 10706925 mutations, and the best chromasome was:
+ 87 57 12 86 27 35 20 60 77 62 55 34 83 7 9 51 61 25 81 85 39 37 95 13 76 33 5 52 78 96 14 48 100 41 71 43 3 46 29 30 82 44 64 40 54 2 50 68 73 69 31 80 89 42 8 56 75 26 66 4 65 70 22 94 16 88 19 97 67 58 93 28 91 45 23 98 32 17 15 21 74 24 18 84 10 72 59 99 36 38 79 90 53 49 6 92 1 63 47 11 
+ with a fitness of 31686.961103703732
+ The runtime was: 572.940625562 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :31686.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 14
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: populationSize/2
+ The solution was found on generation: 996
+ It took 1000 generations, 10806846 mutations, and the best chromasome was:
+ 15 17 59 74 21 72 36 38 99 24 18 84 10 90 49 1 93 58 61 81 73 50 68 85 39 34 7 9 57 87 51 77 23 91 11 32 45 98 60 62 20 86 35 27 12 55 83 46 29 43 3 41 71 100 14 48 52 96 30 78 5 37 33 76 13 95 82 44 2 54 40 64 69 25 67 28 47 79 88 94 22 70 16 53 97 8 92 42 89 31 80 56 26 66 65 4 19 75 6 63 
+ with a fitness of 27867.88417338284
+ The runtime was: 547.145447666 seconds
+ The final standard deviation of the population was: 32.93933818400121
+ The final Mu value for the population was :27895.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 21
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: populationSize/2
+ The solution was found on generation: 999
+ It took 1000 generations, 10906907 mutations, and the best chromasome was:
+ 22 94 18 38 99 36 84 72 74 21 47 91 98 45 17 15 11 59 10 24 79 16 70 66 26 65 4 75 90 6 49 63 8 67 93 28 58 61 51 69 81 25 85 68 73 50 2 64 40 54 44 82 13 33 76 95 37 5 96 39 30 52 78 48 41 71 100 14 3 43 46 29 34 9 87 57 7 55 83 27 12 20 86 35 62 60 77 23 32 1 92 80 31 89 42 56 97 19 53 88 
+ with a fitness of 27583.286031277603
+ The runtime was: 547.500232494 seconds
+ The final standard deviation of the population was: 19.026297590440446
+ The final Mu value for the population was :27691.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 33
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: populationSize/2
+ The solution was found on generation: 923
+ It took 1000 generations, 11006572 mutations, and the best chromasome was:
+ 34 29 30 37 33 76 95 82 13 5 96 78 52 71 41 100 48 14 46 3 43 27 12 55 83 86 77 23 45 17 32 11 21 72 59 74 15 91 98 60 62 35 20 9 7 57 87 51 61 67 28 93 1 47 58 81 25 69 68 85 39 50 44 73 2 40 64 54 89 42 80 31 56 97 75 8 92 63 49 6 90 84 36 99 38 24 18 79 53 19 4 65 26 70 66 22 94 16 88 10 
+ with a fitness of 29869.460072919996
+ The runtime was: 540.135422748 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :29869.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 9
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: populationSize/2
+ The solution was found on generation: 962
+ It took 1000 generations, 11106429 mutations, and the best chromasome was:
+ 10 84 92 56 97 19 75 90 49 63 47 91 98 23 60 77 35 27 12 83 34 55 46 43 3 14 48 100 41 71 29 30 39 95 13 33 76 82 5 37 96 52 78 85 68 73 50 44 2 40 54 64 69 25 81 61 51 87 57 9 7 20 86 62 45 32 11 17 15 59 74 21 72 36 99 38 24 18 79 53 16 88 94 22 70 66 26 65 4 8 42 80 31 89 67 58 28 93 1 6 
+ with a fitness of 26314.989327266674
+ The runtime was: 539.094282371 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :26314.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 91
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: populationSize/2
  The solution was found on generation: 977
- It took 1000 generations, 294465 mutations, and the best chromasome was:
- 52 14 13 27 28 12 51 33 43 10 9 41 19 45 8 3 17 42 7 2 30 20 50 23 21 31 18 1 49 22 32 36 35 34 44 37 24 48 38 40 39 5 15 6 4 25 46 16 29 47 26 11 
- with a fitness of 8374.780457620422
- The runtime was: 34.948967942 seconds
+ It took 1000 generations, 11206666 mutations, and the best chromasome was:
+ 92 49 6 53 79 18 94 22 16 70 66 26 65 4 97 75 19 88 38 24 36 99 84 10 90 72 21 59 74 11 17 15 32 45 91 98 60 62 77 23 47 63 8 56 80 31 89 42 1 93 28 67 58 51 87 9 27 55 34 83 12 35 86 20 7 57 81 25 61 69 40 2 64 54 44 73 50 82 95 13 33 76 37 5 39 30 52 96 78 68 85 71 3 46 43 29 14 48 100 41 
+ with a fitness of 28481.963605124463
+ The runtime was: 533.385746246 seconds
  The final standard deviation of the population was: 0.0
- The final Mu value for the population was :8374.0
+ The final Mu value for the population was :28481.0
 
 GA finished.
- The parent selection used was All Chromasomes
+ The parent selection used was Roulette
  We ran for 1000 generations.
+ used constant first city: true
  removeMothers was: false
- genBothChildren was: false
- Had a constant first city: 0
+ genBothChildren was: true
+ Had a constant first city: 91
  The population size was: 100
  Used tournament for child selection: false
- Number of children generated each generation: population size-2
- The solution was found on generation: 906
- It took 1000 generations, 392920 mutations, and the best chromasome was:
- 52 13 14 47 26 28 27 12 11 51 25 4 15 5 6 24 48 38 37 40 39 34 35 36 44 46 29 16 20 50 23 30 2 7 42 21 17 3 18 31 22 1 49 32 45 19 41 10 9 8 43 33 
- with a fitness of 7868.6324157859835
- The runtime was: 34.809763056 seconds
+ Number of children generated each generation: populationSize/2
+ The solution was found on generation: 997
+ It took 1000 generations, 11306637 mutations, and the best chromasome was:
+ 92 6 49 63 1 47 93 28 67 89 80 31 42 8 56 97 75 19 4 26 65 70 66 22 16 94 88 53 79 10 90 84 18 24 38 99 36 21 74 72 59 11 17 15 32 45 91 98 23 58 81 61 25 69 64 54 40 2 73 44 50 68 85 29 3 46 34 55 83 20 27 86 35 62 60 77 51 87 9 7 57 12 43 100 71 41 14 48 30 5 52 96 39 13 82 95 76 33 37 78 
+ with a fitness of 27828.864741628306
+ The runtime was: 536.601730352 seconds
+ The final standard deviation of the population was: 61.424750711744856
+ The final Mu value for the population was :27940.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 61
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: populationSize/2
+ The solution was found on generation: 993
+ It took 1000 generations, 11406570 mutations, and the best chromasome was:
+ 62 60 77 35 27 57 9 7 34 83 55 12 86 20 98 23 91 45 32 15 17 11 72 10 84 24 38 36 99 74 21 59 47 63 1 92 6 49 90 18 79 53 16 88 94 22 70 66 26 65 4 19 75 97 56 89 31 80 42 8 67 93 28 58 87 51 61 25 81 73 50 68 85 30 39 100 41 71 46 43 3 29 14 48 96 78 52 37 5 33 13 76 95 82 2 44 40 54 69 64 
+ with a fitness of 27370.991194477418
+ The runtime was: 535.116588017 seconds
  The final standard deviation of the population was: 0.0
- The final Mu value for the population was :7868.0
+ The final Mu value for the population was :27370.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 67
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: populationSize/2
+ The solution was found on generation: 947
+ It took 1000 generations, 11506369 mutations, and the best chromasome was:
+ 68 85 30 78 52 96 39 86 35 27 12 7 9 51 61 67 42 89 31 80 56 97 8 6 63 1 92 75 19 4 65 66 26 70 22 16 88 94 53 79 90 49 10 36 99 38 18 24 84 72 21 74 59 17 15 11 32 47 91 45 98 23 77 62 60 20 57 25 69 54 2 40 64 73 50 44 95 82 13 76 33 5 37 48 71 41 100 14 3 29 46 43 34 83 55 87 28 93 58 81 
+ with a fitness of 28419.076425196286
+ The runtime was: 534.764759777 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :28419.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 25
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: populationSize/2
+ The solution was found on generation: 971
+ It took 1000 generations, 11606245 mutations, and the best chromasome was:
+ 26 16 88 22 70 66 65 4 97 56 92 49 63 6 75 19 53 79 38 99 36 94 18 24 84 10 72 21 59 74 17 15 11 45 91 32 47 98 23 60 77 62 20 12 86 35 27 57 9 7 34 55 83 46 3 43 71 100 41 14 29 48 52 78 96 39 37 5 95 13 33 76 82 2 44 40 54 64 69 25 81 68 73 50 85 30 87 51 61 58 28 93 67 80 31 89 42 8 1 90 
+ with a fitness of 28041.91469433491
+ The runtime was: 531.170224832 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :28041.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 85
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: populationSize/2
+ The solution was found on generation: 986
+ It took 1000 generations, 11706319 mutations, and the best chromasome was:
+ 86 35 27 12 7 9 83 55 34 29 46 3 43 14 100 41 71 30 48 52 78 5 96 37 33 76 13 95 82 54 64 40 2 50 44 85 39 68 73 69 81 25 87 57 20 62 60 77 51 61 58 93 67 28 98 23 45 32 91 17 15 11 74 59 36 72 21 47 63 1 8 56 42 89 31 80 4 26 66 65 97 75 92 6 49 19 90 24 38 99 10 84 18 94 22 70 16 88 79 53 
+ with a fitness of 28455.073054279917
+ The runtime was: 526.002601465 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :28455.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 6
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: populationSize/2
+ The solution was found on generation: 802
+ It took 1000 generations, 11806505 mutations, and the best chromasome was:
+ 7 9 57 20 77 23 91 45 60 62 35 27 86 12 83 55 34 68 85 30 39 96 78 37 13 76 33 95 82 5 52 48 71 41 100 14 43 3 46 29 87 25 51 61 58 81 69 50 73 44 2 54 40 64 67 28 1 93 75 92 8 42 89 31 80 56 97 4 70 16 88 22 94 38 36 99 24 18 79 53 66 26 65 19 90 10 84 21 11 15 17 59 74 72 63 6 49 47 32 98 
+ with a fitness of 28733.7523055969
+ The runtime was: 536.634127465 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :28733.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 73
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: populationSize/2
+ The solution was found on generation: 874
+ It took 1000 generations, 11906959 mutations, and the best chromasome was:
+ 74 59 21 72 10 90 19 75 80 89 31 42 8 56 97 4 65 26 70 22 94 88 16 66 53 79 38 24 18 99 36 84 49 6 63 92 1 93 47 28 67 58 23 98 91 32 11 17 15 45 77 60 62 35 27 86 12 55 83 7 9 20 57 87 61 25 81 69 54 64 40 2 73 68 50 44 82 95 13 76 33 37 96 78 52 48 30 29 34 43 3 46 14 71 41 100 5 39 85 51 
+ with a fitness of 28737.130927670547
+ The runtime was: 530.398108724 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :28737.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 47
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: populationSize/2
+ The solution was found on generation: 865
+ It took 1000 generations, 12007332 mutations, and the best chromasome was:
+ 48 52 37 13 33 76 95 82 44 68 85 51 61 58 69 40 54 64 2 73 50 39 5 78 96 30 100 41 71 14 43 3 46 29 34 55 83 86 12 62 77 91 45 32 47 63 6 90 19 53 79 88 16 94 22 70 26 66 65 4 97 31 42 89 67 28 93 81 25 87 9 57 7 20 27 35 60 98 23 11 74 15 17 59 21 72 36 99 18 24 38 84 10 49 1 92 8 80 56 75 
+ with a fitness of 29410.483139709675
+ The runtime was: 532.129579276 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :29410.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 40
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: populationSize/2
+ The solution was found on generation: 935
+ It took 1000 generations, 12107180 mutations, and the best chromasome was:
+ 41 71 48 100 14 46 43 3 29 30 50 44 2 82 95 76 13 33 37 78 52 5 96 39 85 68 73 64 81 25 61 57 62 60 98 91 23 45 32 11 17 59 74 21 10 90 49 6 63 1 67 54 40 69 87 51 7 9 34 83 55 12 20 86 27 35 77 58 93 28 47 92 8 89 42 31 80 56 97 4 65 26 66 75 19 53 16 22 70 94 88 79 84 38 24 18 99 36 72 15 
+ with a fitness of 28169.712832054083
+ The runtime was: 527.693261808 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :28169.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 6
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: populationSize/2
+ The solution was found on generation: 983
+ It took 1000 generations, 12207641 mutations, and the best chromasome was:
+ 7 55 83 34 9 51 25 69 73 68 85 39 96 78 52 30 14 3 43 46 29 71 41 100 48 5 37 33 76 13 95 82 50 44 2 54 40 64 67 89 42 80 31 56 8 92 1 47 11 17 15 32 91 98 45 59 74 21 72 10 84 36 99 38 24 18 79 53 16 88 94 22 70 26 66 65 4 97 19 75 90 49 6 63 28 93 58 77 23 60 62 86 35 27 12 20 57 87 61 81 
+ with a fitness of 25632.673763291546
+ The runtime was: 536.347226553 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :25632.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 65
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: populationSize/2
+ The solution was found on generation: 979
+ It took 1000 generations, 12307766 mutations, and the best chromasome was:
+ 66 26 65 4 97 75 42 80 31 89 56 19 53 79 16 70 94 22 88 18 24 38 36 99 59 74 21 72 10 84 90 49 6 63 93 58 61 81 68 85 39 30 96 52 78 5 37 76 33 13 95 82 2 54 40 64 44 50 73 69 25 51 9 20 27 86 62 45 11 15 17 32 47 1 92 8 67 28 91 23 98 60 77 87 57 7 55 46 43 41 71 100 48 14 3 29 34 83 12 35 
+ with a fitness of 26784.370058851953
+ The runtime was: 540.198809103 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :26784.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 36
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: populationSize/2
+ The solution was found on generation: 867
+ It took 1000 generations, 12407885 mutations, and the best chromasome was:
+ 37 5 78 52 96 39 30 46 14 48 100 71 41 3 43 29 34 83 55 27 12 86 35 20 57 7 9 87 51 98 15 32 17 74 59 21 10 1 28 93 58 61 81 25 69 64 40 54 2 82 95 13 76 33 44 73 68 85 50 67 89 31 42 80 8 92 63 6 49 47 23 60 62 77 45 11 91 72 36 99 38 24 18 53 19 75 97 56 4 26 65 66 70 22 94 16 88 79 90 84 
+ with a fitness of 29299.056184986675
+ The runtime was: 540.131759641 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :29299.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 87
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: populationSize/2
+ The solution was found on generation: 999
+ It took 1000 generations, 12508046 mutations, and the best chromasome was:
+ 88 16 94 22 70 53 19 26 66 65 4 97 75 92 63 6 49 90 10 84 36 99 38 24 18 79 56 80 31 89 42 8 1 93 28 67 58 98 91 47 32 15 11 17 21 72 74 59 45 23 60 77 62 27 35 86 51 61 87 57 9 7 20 12 55 83 34 46 29 3 43 14 71 41 100 48 52 78 39 30 96 5 37 44 69 81 25 68 50 95 13 33 76 82 2 64 40 54 73 85 
+ with a fitness of 27358.941047289227
+ The runtime was: 539.652305591 seconds
+ The final standard deviation of the population was: 23.130067012440755
+ The final Mu value for the population was :27867.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 82
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: populationSize/2
+ The solution was found on generation: 999
+ It took 1000 generations, 12608378 mutations, and the best chromasome was:
+ 83 34 29 3 46 43 41 71 100 48 14 30 78 96 52 37 5 33 95 76 13 82 39 85 50 73 44 2 40 64 54 31 80 42 89 8 92 1 63 49 6 56 97 75 66 26 65 4 19 90 72 10 84 79 53 16 70 22 94 88 18 99 24 38 36 59 74 21 11 17 15 45 32 91 98 23 47 93 28 67 69 68 81 25 51 9 57 20 12 27 86 35 62 60 77 55 7 87 58 61 
+ with a fitness of 28254.422453447936
+ The runtime was: 548.891214083 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :28321.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 90
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: populationSize/2
+ The solution was found on generation: 997
+ It took 1000 generations, 12708600 mutations, and the best chromasome was:
+ 91 45 98 23 77 60 62 35 86 12 27 20 7 9 57 51 87 85 82 95 76 33 13 37 78 52 48 14 41 100 71 3 43 46 34 55 83 29 30 96 5 39 50 44 2 40 54 64 73 68 69 25 81 61 67 58 93 28 1 92 97 56 31 89 80 42 8 75 4 26 66 65 88 16 94 22 18 79 10 99 36 72 21 74 59 15 11 17 32 47 90 63 6 49 84 38 24 53 70 19 
+ with a fitness of 29017.30438695523
+ The runtime was: 544.913383473 seconds
+ The final standard deviation of the population was: 9.797958971132712
+ The final Mu value for the population was :29115.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 18
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: populationSize/2
+ The solution was found on generation: 995
+ It took 1000 generations, 12809274 mutations, and the best chromasome was:
+ 19 75 6 49 90 84 10 21 74 17 15 11 32 45 23 98 91 47 63 1 93 58 61 25 81 69 64 54 40 2 44 73 50 85 68 39 13 76 33 95 82 5 37 96 78 52 30 48 100 41 71 14 3 43 46 29 34 55 83 20 87 51 9 57 7 12 27 86 35 62 60 77 67 28 92 8 42 89 31 80 56 97 26 65 66 4 70 94 22 88 16 53 79 18 24 38 99 36 59 72 
+ with a fitness of 25430.705774582955
+ The runtime was: 541.420937302 seconds
+ The final standard deviation of the population was: 39.6232255123179
+ The final Mu value for the population was :25496.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 86
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: populationSize/2
+ The solution was found on generation: 977
+ It took 1000 generations, 12909395 mutations, and the best chromasome was:
+ 87 57 12 27 20 7 9 55 83 34 29 46 43 3 14 41 71 100 48 30 85 68 82 95 33 13 76 5 37 96 78 52 39 44 50 73 69 2 40 64 54 42 89 80 31 56 8 92 1 6 49 63 84 72 10 90 19 75 97 4 65 26 66 70 22 94 16 88 53 79 18 24 38 36 99 59 74 21 11 17 15 32 23 60 35 86 62 77 51 25 81 61 58 67 28 93 47 91 45 98 
+ with a fitness of 26810.108442454366
+ The runtime was: 540.102509872 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :26810.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 58
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: populationSize/2
+ The solution was found on generation: 904
+ It took 1000 generations, 13009463 mutations, and the best chromasome was:
+ 59 21 36 99 38 24 18 79 53 26 65 4 66 70 94 22 88 16 90 19 75 97 56 80 31 89 42 8 92 1 63 49 6 84 10 72 74 11 17 15 32 45 98 91 47 23 60 62 35 27 20 86 77 58 28 67 93 61 57 12 46 29 3 48 100 41 71 14 43 83 55 34 85 73 39 30 52 96 78 5 37 95 13 76 33 82 50 44 54 2 40 64 69 68 81 25 51 87 7 9 
+ with a fitness of 27994.09020321676
+ The runtime was: 527.36985003 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :27994.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 96
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: populationSize/2
+ The solution was found on generation: 868
+ It took 1000 generations, 13109451 mutations, and the best chromasome was:
+ 97 56 89 42 80 31 8 92 49 75 4 65 26 66 19 70 16 22 94 88 53 79 36 99 24 18 38 84 10 90 63 6 1 47 59 74 21 72 11 15 17 32 91 98 45 23 51 61 58 93 28 67 69 40 64 54 2 73 50 44 81 25 68 85 30 39 82 95 33 13 76 37 5 78 96 52 48 100 71 41 43 3 14 29 46 9 7 57 87 77 60 62 35 27 86 20 12 83 34 55 
+ with a fitness of 27175.5204352778
+ The runtime was: 516.938563093 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :27175.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 25
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: populationSize/2
+ The solution was found on generation: 992
+ It took 1000 generations, 13209344 mutations, and the best chromasome was:
+ 26 70 88 22 16 94 18 24 38 36 99 21 74 59 17 15 11 72 84 79 19 97 75 92 49 63 6 90 10 53 66 65 4 56 80 89 31 42 8 64 54 40 2 69 44 73 68 85 13 33 76 95 82 50 39 5 37 52 78 96 30 48 14 43 3 100 71 41 34 29 46 55 83 9 7 57 61 25 81 87 51 20 12 27 86 35 62 60 77 98 23 91 45 32 47 93 58 67 28 1 
+ with a fitness of 29179.200823427094
+ The runtime was: 533.364734878 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :29179.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 63
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: populationSize/2
+ The solution was found on generation: 980
+ It took 1000 generations, 13309745 mutations, and the best chromasome was:
+ 64 2 82 33 76 95 13 37 52 30 12 35 62 23 45 11 47 1 63 49 6 92 8 42 80 31 89 67 56 75 97 4 65 26 66 53 16 22 70 88 94 18 79 19 90 10 84 24 38 36 99 72 21 59 74 17 15 32 91 98 28 93 58 51 87 77 60 86 27 20 7 9 57 25 68 39 5 78 96 48 100 41 71 14 3 43 46 29 34 55 83 85 73 50 44 54 40 69 81 61 
+ with a fitness of 29605.06011984254
+ The runtime was: 525.447221877 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :29605.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 5
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: populationSize/2
+ The solution was found on generation: 889
+ It took 1000 generations, 13410117 mutations, and the best chromasome was:
+ 6 11 17 15 45 23 60 62 20 86 35 27 12 7 55 83 9 87 57 51 25 81 68 85 34 29 46 43 3 14 100 71 41 48 39 30 96 52 78 5 37 33 13 76 95 82 73 64 40 54 2 44 50 69 61 58 67 28 93 1 63 49 75 4 65 26 66 70 97 56 8 80 31 89 42 92 90 19 53 79 88 16 22 94 18 24 38 99 36 74 21 59 72 84 10 47 32 91 98 77 
+ with a fitness of 27202.077924775702
+ The runtime was: 532.757634649 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :27202.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 37
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: populationSize/2
+ The solution was found on generation: 897
+ It took 1000 generations, 13510020 mutations, and the best chromasome was:
+ 38 36 99 24 18 53 19 65 66 26 80 42 89 31 56 97 4 70 16 88 22 94 79 84 59 72 21 74 17 15 11 98 23 60 77 62 20 12 86 27 35 57 7 87 51 25 81 61 58 91 32 45 47 63 90 10 6 49 75 92 1 8 93 28 67 54 2 40 64 69 44 50 73 85 68 30 39 82 95 13 33 76 37 5 78 52 96 41 71 100 48 14 3 43 46 29 34 83 9 55 
+ with a fitness of 28575.722438636225
+ The runtime was: 525.896499626 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :28575.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 90
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: populationSize/2
+ The solution was found on generation: 986
+ It took 1000 generations, 13609846 mutations, and the best chromasome was:
+ 91 47 32 11 15 17 23 45 98 60 62 35 86 27 12 9 87 51 61 81 25 69 73 50 2 44 40 54 64 68 85 39 96 52 78 76 33 13 82 95 5 37 30 48 100 41 71 14 43 3 46 29 55 83 34 7 57 20 77 58 67 93 28 92 49 90 79 18 24 38 99 36 84 72 21 74 59 10 6 63 1 56 80 89 31 42 8 4 65 26 70 19 75 97 66 53 88 22 16 94 
+ with a fitness of 28329.108320242998
+ The runtime was: 536.454101173 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :28329.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 13
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: populationSize/2
+ The solution was found on generation: 948
+ It took 1000 generations, 13709882 mutations, and the best chromasome was:
+ 14 100 71 41 46 55 12 83 7 9 68 73 69 81 61 51 87 57 85 39 82 50 40 64 54 44 2 95 33 13 76 37 5 30 96 52 78 48 43 3 29 34 20 35 27 86 62 60 77 98 23 91 45 32 17 15 11 47 63 8 42 89 31 80 56 75 97 4 66 26 65 19 79 84 10 72 21 74 59 36 99 38 24 18 94 88 16 22 70 53 90 49 6 92 1 93 28 67 58 25 
+ with a fitness of 28155.24888903014
+ The runtime was: 531.687895085 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :28155.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 38
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: populationSize/2
+ The solution was found on generation: 954
+ It took 1000 generations, 13810322 mutations, and the best chromasome was:
+ 39 96 78 52 48 100 41 71 43 3 14 30 37 5 76 33 13 82 95 50 44 73 68 85 29 46 83 55 27 35 62 77 60 23 45 91 47 63 92 8 42 89 80 31 26 66 65 4 19 53 88 16 22 70 94 79 18 24 36 99 38 75 97 56 67 54 40 2 64 69 81 61 51 87 9 7 34 12 86 20 57 25 58 93 28 98 11 32 15 17 59 74 21 72 84 10 90 49 6 1 
+ with a fitness of 28812.593677935907
+ The runtime was: 538.865814447 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :28812.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 43
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: populationSize/2
+ The solution was found on generation: 989
+ It took 1000 generations, 13910397 mutations, and the best chromasome was:
+ 44 50 85 68 73 2 54 40 64 69 25 61 58 51 87 9 57 20 83 34 30 39 82 95 13 33 76 37 5 52 78 96 14 48 100 71 41 3 43 46 29 55 12 27 7 81 93 28 67 89 31 80 42 8 56 97 92 75 19 4 65 26 66 53 16 22 70 94 88 79 90 6 49 63 1 47 72 10 84 24 38 18 99 36 21 74 59 32 15 17 11 45 91 98 23 77 60 62 35 86 
+ with a fitness of 27027.25308733949
+ The runtime was: 538.536790976 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :27027.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 83
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: populationSize/2
+ The solution was found on generation: 996
+ It took 1000 generations, 14010598 mutations, and the best chromasome was:
+ 84 38 36 99 24 18 94 79 53 16 88 22 70 66 26 65 4 56 97 19 31 80 89 42 8 1 67 93 28 47 63 92 75 6 49 90 10 59 21 72 74 17 15 11 32 98 91 45 23 60 77 62 35 86 27 20 12 57 7 34 83 55 9 87 51 81 61 58 25 69 64 54 40 50 73 44 2 82 95 33 13 68 85 30 29 46 3 43 14 41 71 100 48 96 78 52 39 76 37 5 
+ with a fitness of 27879.80997373896
+ The runtime was: 538.797852222 seconds
+ The final standard deviation of the population was: 19.493588689617926
+ The final Mu value for the population was :27935.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 14
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: populationSize/2
+ The solution was found on generation: 973
+ It took 1000 generations, 14110762 mutations, and the best chromasome was:
+ 15 17 59 74 21 10 72 18 99 36 38 24 84 79 16 22 94 70 66 26 4 65 97 56 31 80 42 89 8 67 61 81 68 25 51 87 9 7 12 27 35 62 77 98 47 32 11 45 91 23 60 86 20 57 34 55 83 3 100 71 41 14 43 46 29 30 48 96 52 78 5 37 13 33 76 95 82 39 85 50 44 73 69 64 2 54 40 58 93 28 1 92 75 63 6 49 90 19 53 88 
+ with a fitness of 28561.209974071957
+ The runtime was: 542.811309042 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :28561.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 45
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: populationSize/2
+ The solution was found on generation: 992
+ It took 1000 generations, 14210855 mutations, and the best chromasome was:
+ 46 43 3 29 14 41 71 100 48 30 85 50 2 44 82 95 13 33 76 37 5 78 52 96 39 68 7 57 9 55 83 34 12 20 27 86 35 62 60 77 23 98 45 15 17 32 11 1 93 28 61 51 87 25 81 69 73 40 54 64 58 67 92 8 42 89 31 80 56 97 75 63 6 49 90 19 4 65 26 66 70 22 94 16 88 53 79 10 36 99 38 18 24 84 72 74 21 59 47 91 
+ with a fitness of 26923.018799757017
+ The runtime was: 527.00241415 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :26923.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 9
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: populationSize/2
+ The solution was found on generation: 937
+ It took 1000 generations, 14311122 mutations, and the best chromasome was:
+ 10 84 36 99 38 24 18 94 22 88 16 70 26 66 65 4 97 56 80 31 89 42 8 92 1 47 28 93 87 9 7 55 43 46 3 14 71 41 100 48 52 78 96 39 37 5 13 33 76 95 82 50 44 2 54 40 64 73 68 85 30 29 34 83 12 20 77 60 62 86 35 27 57 51 61 81 25 69 67 58 23 98 45 91 32 11 17 15 74 21 59 72 90 79 53 49 6 63 75 19 
+ with a fitness of 26020.72183977479
+ The runtime was: 529.069582082 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :26020.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 36
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: populationSize/2
+ The solution was found on generation: 960
+ It took 1000 generations, 14410998 mutations, and the best chromasome was:
+ 37 5 33 76 13 82 95 96 52 78 30 34 83 55 46 29 43 3 14 71 41 48 100 39 85 68 50 73 44 2 54 40 64 69 58 93 28 67 61 81 25 51 87 57 9 7 20 62 35 86 27 12 77 60 23 45 98 91 47 11 32 17 15 59 74 21 72 90 49 6 92 8 42 56 80 31 89 97 65 26 66 4 53 88 16 22 70 94 79 18 84 10 36 99 38 24 19 75 63 1 
+ with a fitness of 27238.628154655802
+ The runtime was: 515.656666895 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :27238.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 98
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: populationSize/2
+ The solution was found on generation: 967
+ It took 1000 generations, 14511239 mutations, and the best chromasome was:
+ 99 38 24 10 84 36 72 21 74 59 17 15 11 91 98 58 61 87 7 9 57 51 68 73 50 44 64 89 31 56 80 42 8 92 67 93 28 1 6 19 16 88 22 94 18 79 53 70 66 26 65 4 97 75 90 49 63 47 32 45 23 77 60 62 35 86 20 27 12 83 55 34 3 14 29 46 43 71 41 100 48 52 96 39 85 30 78 5 37 33 76 13 95 82 2 54 40 69 81 25 
+ with a fitness of 27227.98701830923
+ The runtime was: 532.220788884 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :27227.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 62
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: populationSize/2
+ The solution was found on generation: 995
+ It took 1000 generations, 14610853 mutations, and the best chromasome was:
+ 63 47 28 93 67 1 72 36 99 24 38 79 94 88 16 22 70 53 19 26 66 65 4 97 92 8 42 31 89 80 56 75 90 6 49 18 10 84 21 74 59 11 15 17 32 91 45 98 23 58 61 51 87 77 60 62 86 20 55 83 7 9 57 12 73 68 81 25 69 64 54 40 2 44 50 85 96 78 52 82 95 33 13 76 5 37 39 30 29 48 46 43 3 71 41 100 14 34 35 27 
+ with a fitness of 30374.09835879347
+ The runtime was: 526.220734669 seconds
+ The final standard deviation of the population was: 16.186414056238647
+ The final Mu value for the population was :30437.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 98
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: populationSize/2
+ The solution was found on generation: 828
+ It took 1000 generations, 14711255 mutations, and the best chromasome was:
+ 99 36 72 21 74 59 84 38 24 18 79 53 19 75 56 97 65 26 66 70 94 22 88 16 4 31 80 89 42 8 1 93 58 51 9 7 57 20 62 60 77 35 86 27 46 29 85 68 25 81 87 12 55 34 83 43 3 14 41 100 71 48 30 39 96 78 52 37 5 13 76 33 95 82 50 73 44 54 40 64 2 69 61 28 67 92 63 6 49 90 10 47 32 15 17 11 45 91 98 23 
+ with a fitness of 27898.195460405015
+ The runtime was: 535.039797907 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :27898.0
+
+GA finished.
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ used constant first city: true
+ removeMothers was: false
+ genBothChildren was: true
+ Had a constant first city: 11
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: populationSize/2
+ The solution was found on generation: 912
+ It took 1000 generations, 14811371 mutations, and the best chromasome was:
+ 12 85 68 69 64 2 40 54 67 1 59 74 21 72 36 38 24 18 99 94 22 88 16 70 66 26 65 4 97 56 80 31 42 92 8 89 58 61 73 50 44 82 13 33 76 95 37 5 78 96 52 39 30 29 48 100 41 71 14 3 43 46 34 55 83 27 35 86 20 62 60 77 57 7 9 87 51 81 25 28 93 98 23 45 91 15 17 11 32 47 63 6 49 79 53 19 75 90 10 84 
+ with a fitness of 29115.76460811949
+ The runtime was: 529.704781514 seconds
+ The final standard deviation of the population was: 0.0
+ The final Mu value for the population was :29115.0
