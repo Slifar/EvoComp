@@ -26,27 +26,40 @@ public class main {
 			e.printStackTrace();
 		} 
 		setupDataSet();
-		GA ga;
-		for(int i = 0; i < Constants.numTrials; i++){
+		GA ga = null;
+		resetConstants();
+		resetAggOut("Totals - allFalse");
+		runGA(ga);
+		Constants.genBothChildren = true;
+		resetAggOut("Totals - GenBothChildren");
+		runGA(ga);
+		Constants.Roulette = true;
+		resetAggOut("Totals - RouletteBothChildren");
+		runGA(ga);
+		Constants.constantFirstCity = true;
+		resetAggOut("Totals - All True");
+		runGA(ga);
+		Constants.Roulette = false;
+		resetAggOut("Totals - ConstantFirstBothChildren");
+		runGA(ga);
+		Constants.genBothChildren = false;
+		resetAggOut("Totals - Constant First City");
+		runGA(ga);
+		resetConstants();
+		Constants.Roulette = true;
+		resetAggOut("Totals - Roulette");
+		runGA(ga);
+		Constants.constantFirstCity = true;
+		resetAggOut("Totals - RouletteConstantFirst");
+		runGA(ga);
+		
+		/*for(int i = 0; i < Constants.numTrials; i++){
 			ga = new GA();
 			ga.runGA();
 			out.println("");
 		}
-		printTotalOutput();
-		totalFit = 0;
-		totalChroms=0;
-		currentBest = 0;
-		Constants.genChildrenDivideorMinus = true;
-		for(int i = 0; i < Constants.numTrials; i++){
-			ga = new GA();
-			ga.runGA();
-			out.println("");
-		}
-		printTotalOutput();
-		totalFit = 0;
-		totalChroms=0;
-		currentBest = 0;
-		System.out.println("Ding!");
+		printTotalOutput();*/
+		
 	}
 
 	private static void setupDataSet() {
@@ -69,11 +82,41 @@ public class main {
 	
 	private static void resetAggOut(String outputFile){
 		try {
+			aggregateOut.flush();
 			aggregateOut = new PrintWriter(new FileWriter(outputFile));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} 
+	}
+	
+	private static void runGA(GA ga){
+		currentBest = 0;
+		totalFit = 0;
+		totalChroms = 0;
+		for(int i = 0; i < Constants.numTrials; i++){
+			ga = new GA();
+			ga.runGA();
+			out.println("");
+		}
+		printTotalOutput();
+		currentBest = 0;
+		totalFit = 0;
+		totalChroms = 0;
+		Constants.genChildrenDivideorMinus = true;
+		for(int i = 0; i < Constants.numTrials; i++){
+			ga = new GA();
+			ga.runGA();
+			out.println("");
+		}
+		printTotalOutput();
+		Constants.genChildrenDivideorMinus = false;
+	}
+	
+	public static void resetConstants(){
+		Constants.Roulette = false;
+		Constants.genBothChildren = false;
+		Constants.constantFirstCity = false;
 	}
 	
 	private static void printTotalOutput(){

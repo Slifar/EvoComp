@@ -1,0 +1,26 @@
+GAs finished.
+ Number of trials ran: 50
+ used constant first city: true
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ removeMothers was: false
+ genBothChildren was: false
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: population size-2
+ The best fitness found was: 32097.252066138837
+ The average fitness found was: 37953.39401683585
+
+GAs finished.
+ Number of trials ran: 50
+ used constant first city: true
+ The parent selection used was Roulette
+ We ran for 1000 generations.
+ removeMothers was: false
+ genBothChildren was: false
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: populationSize/2
+ The best fitness found was: 42920.568473747
+ The average fitness found was: 46683.03727900865
+

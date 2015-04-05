@@ -1,0 +1,13 @@
+GAs finished.
+ Number of trials ran: 50
+ used constant first city: false
+ The parent selection used was All Chromasomes
+ We ran for 1000 generations.
+ removeMothers was: false
+ genBothChildren was: true
+ The population size was: 100
+ Used tournament for child selection: false
+ Number of children generated each generation: population size-2
+ The best fitness found was: 86095.43602525658
+ The average fitness found was: 144665.46969184736
+
