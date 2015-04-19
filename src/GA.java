@@ -71,40 +71,43 @@ public class GA {
 				int select1 = rand.nextInt(maxParents.size());
 				Chromasome parent1 = maxParents.remove(select1);//Randomly select one parent
 				minParents.remove(parent1);
-				Chromasome parent2 = findMaxMate(parent1, maxParents);//Randomly select the other parent
-				if(Constants.removeMothers){
-					maxParents.remove(parent2);
-				}
+				Chromasome parent2;//Randomly select the other parent
 				Chromasome child1;
 				Chromasome child2;
-				child1 = genChild(parent1, parent2);//Generate one of the children
-				if(Constants.genBothChildren || Constants.childTourney){
-					child2=genChild(parent2, parent1);//Generate the other child
-					if(Constants.childTourney){
-						children.add(childTourney(child1, child2));
+				if (Constants.genFar) {
+					parent2 = findMaxMate(parent1, maxParents);
+					if (Constants.removeMothers) {
+						maxParents.remove(parent2);
 					}
-					else{
+					child1 = genChild(parent1, parent2);//Generate one of the children
+					if (Constants.genBothChildren || Constants.childTourney) {
+						child2 = genChild(parent2, parent1);//Generate the other child
+						if (Constants.childTourney) {
+							children.add(childTourney(child1, child2));
+						} else {
+							children.add(child1);
+							children.add(child2);
+						}
+					}
+				}
+				if (Constants.genNear) {
+					parent2 = findMinMate(parent1, minParents);//Randomly select the other parent
+					if (Constants.removeMothers) {
+						minParents.remove(parent2);
+					}
+					child1 = genChild(parent1, parent2);
+					if (Constants.genBothChildren || Constants.childTourney) {
+						child2 = genChild(parent1, parent2);//Generate the other child
+						if (Constants.childTourney) {
+							children.add(childTourney(child1, child2));
+						} else {
+							children.add(child1);
+							children.add(child2);
+						}
+
+					} else
 						children.add(child1);
-						children.add(child2);
-					}
 				}
-				parent2 = findMinMate(parent1, minParents);//Randomly select the other parent
-				if(Constants.removeMothers){
-					minParents.remove(parent2);
-				}
-				child1 = genChild(parent1, parent2);
-				if(Constants.genBothChildren || Constants.childTourney){
-					child2 = genChild(parent1, parent2);//Generate the other child
-					if(Constants.childTourney){
-						children.add(childTourney(child1, child2));
-					}
-					else{
-						children.add(child1);
-						children.add(child2);
-					}
-					
-				}
-				else children.add(child1);
 			}
 			maxParents.clear();
 			population = prunePopulation(children, population);

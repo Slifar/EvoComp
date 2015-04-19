@@ -15,7 +15,7 @@ public class Constants {
 	public static int sizeConstraint = 6404180; //The knapsack's capacity
 	public static ArrayList<Item> items = new ArrayList<Item>();//The items
 	public static ArrayList<City> cities = new ArrayList<City>();//The cities
-	public static String cityFile = "pr152";//the file with the item sizes to read from
+	public static String cityFile = "Berlin52";//the file with the item sizes to read from
 	public static long mutations = 0; // The number of mutations that occur
 	public static boolean logDev = false; //Flag to set if we want to log stdDev/mu
 	public static int numValuesChangedforMutation = 0;//No longer used
@@ -30,4 +30,6 @@ public class Constants {
 	public static int firstCity;
 	public static String aggregateOutputFile = "Totals.txt";
 	public static int numTrials = 50;
+	public static boolean genFar = true;
+	public static boolean genNear = true;
 }
