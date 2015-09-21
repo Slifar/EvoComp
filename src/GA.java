@@ -159,7 +159,11 @@ public class GA {
 							+ "\n The final Mu value for the population was :"
 							+ this.mu);
 					main.out.flush();
-					if(this.currentBest.fitness < main.currentBest || main.currentBest == 0) main.currentBest = this.currentBest.fitness;
+					if(this.currentBest.fitness < main.currentBest || main.currentBest == 0) 
+					{
+						main.currentBest = this.currentBest.fitness;
+						main.bestCrom = this.currentBest;
+					}
 					for(int i = 0; i < populationSize; i++){
 						main.totalFit += population.get(i).getFitness();
 					}

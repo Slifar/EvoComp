@@ -29,6 +29,7 @@ public class Constants {
 	public static boolean constantFirstCity = false; //If the first city should be the same in each chromasome
 	public static int firstCity;
 	public static String aggregateOutputFile = "Totals.txt";
+	public static String bestOutFile = "bestOutputs.txt";
 	public static int numTrials = 50;
 	public static boolean genFar = true;
 	public static boolean genNear = true;

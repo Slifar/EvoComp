@@ -11,8 +11,10 @@ public class main {
 	public static PrintWriter devOut;
 	public static double currentBest = 0;
 	public static double totalFit = 0;
+	public static Chromasome bestCrom = null;
 	public static int totalChroms = 0;
 	private static PrintWriter aggregateOut;
+	private static PrintWriter bestOut;
 	/**
 	 * @param args
 	 */
@@ -21,6 +23,7 @@ public class main {
 			out = new PrintWriter(new FileWriter(Constants.outputFile));
 			devOut = new PrintWriter(new FileWriter("ConvergenceData.txt"));
 			aggregateOut = new PrintWriter(new FileWriter(Constants.aggregateOutputFile));
+			bestOut = new PrintWriter(new FileWriter(Constants.bestOutFile));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -152,6 +155,8 @@ public class main {
 				+ "\n"
 				);
 		main.aggregateOut.flush();
+		main.bestOut.println(main.bestCrom.getChromString());
+		main.bestOut.flush();
 	}
 
 }
