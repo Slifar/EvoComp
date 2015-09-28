@@ -8,8 +8,8 @@ GAs finished.
  The population size was: 100
  Used tournament for child selection: false
  Number of children generated each generation: population size-2
- The best fitness found was: 7625.775555238515
- The average fitness found was: 8115.762185456392
+ The best fitness found was: 7442.023198780885
+ The average fitness found was: 8042.181374240195
 
 GAs finished.
  Number of trials ran: 50
@@ -21,6 +21,6 @@ GAs finished.
  The population size was: 100
  Used tournament for child selection: false
  Number of children generated each generation: populationSize/2
- The best fitness found was: 7813.026133371389
- The average fitness found was: 8413.357082802979
+ The best fitness found was: 7910.642626372935
+ The average fitness found was: 8474.92242616921
 
