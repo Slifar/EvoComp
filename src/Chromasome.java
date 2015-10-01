@@ -80,8 +80,8 @@ public class Chromasome {
 			}
 			else checkList.set(chromasome[i], true);
 		}
-		double x = Constants.cities.get(chromasome[chromasome.length - 1]).getxChoord() - Constants.cities.get(chromasome[chromasome[0]]).getxChoord();
-		double y = Constants.cities.get(chromasome[chromasome.length - 1]).getyChoord() - Constants.cities.get(chromasome[chromasome[0]]).getyChoord();
+		double x = Constants.cities.get(chromasome[chromasome.length - 1]).getxChoord() - Constants.cities.get(chromasome[0]).getxChoord();
+		double y = Constants.cities.get(chromasome[chromasome.length - 1]).getyChoord() - Constants.cities.get(chromasome[0]).getyChoord();
 		this.fitness += Math.sqrt((x * x) + (y * y));
 		return this.fitness;
 	}
